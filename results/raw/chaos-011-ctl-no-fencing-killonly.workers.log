@@ -1,0 +1,80 @@
+2026-11-10 02:55:29,960 worker INFO worker w6.0 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:55:29,966 worker INFO worker w1.0 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:55:29,971 worker INFO worker w0.0 started faults=no_fencing isolation=read_committed effect=db skew=0.0
+2026-11-10 02:55:29,977 worker INFO worker w3.0 started faults=no_fencing isolation=read_committed effect=db skew=2.0
+2026-11-10 02:55:29,980 worker INFO worker w4.0 started faults=no_fencing isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:55:29,986 worker INFO worker w2.0 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:55:29,990 worker INFO worker w5.0 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:55:29,991 worker INFO worker w7.0 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:55:31,880 worker INFO worker w1.1 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:55:33,539 worker INFO worker w6.1 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:55:35,169 worker INFO worker w5.1 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:55:36,791 worker INFO worker w6.2 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:55:37,356 worker INFO reaped 1 expired leases
+2026-11-10 02:55:38,377 worker INFO reaped 1 expired leases
+2026-11-10 02:55:38,389 worker INFO worker w2.1 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:55:40,172 worker INFO reaped 1 expired leases
+2026-11-10 02:55:40,758 worker INFO worker w7.1 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:55:41,558 worker INFO reaped 1 expired leases
+2026-11-10 02:55:43,258 worker INFO worker w2.2 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:55:43,312 worker INFO reaped 1 expired leases
+2026-11-10 02:55:45,531 worker INFO worker w7.2 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:55:45,620 worker INFO reaped 1 expired leases
+2026-11-10 02:55:47,664 worker INFO worker w2.3 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:55:48,290 worker INFO reaped 1 expired leases
+2026-11-10 02:55:49,535 worker INFO worker w6.3 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:55:50,578 worker INFO reaped 1 expired leases
+2026-11-10 02:55:51,747 worker INFO worker w1.2 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:55:52,610 worker INFO reaped 1 expired leases
+2026-11-10 02:55:53,660 worker INFO worker w7.3 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:55:54,381 worker INFO reaped 1 expired leases
+2026-11-10 02:55:55,344 worker INFO worker w5.2 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:55:56,775 worker INFO reaped 1 expired leases
+2026-11-10 02:55:57,534 worker INFO worker w6.4 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:55:58,589 worker INFO reaped 1 expired leases
+2026-11-10 02:55:59,952 worker INFO worker w5.3 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:56:00,139 worker INFO reaped 1 expired leases
+2026-11-10 02:56:01,718 worker INFO worker w1.3 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:56:02,429 worker INFO reaped 1 expired leases
+2026-11-10 02:56:03,611 worker INFO worker w5.4 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:56:05,032 worker INFO reaped 1 expired leases
+2026-11-10 02:56:05,923 worker INFO worker w4.1 started faults=no_fencing isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:56:06,841 worker INFO reaped 1 expired leases
+2026-11-10 02:56:07,802 worker INFO worker w1.4 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:56:08,485 worker INFO reaped 1 expired leases
+2026-11-10 02:56:10,038 worker INFO worker w2.4 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:56:11,108 worker INFO reaped 1 expired leases
+2026-11-10 02:56:12,296 worker INFO worker w1.5 started faults=no_fencing isolation=read_committed effect=db skew=4.0
+2026-11-10 02:56:12,566 worker INFO reaped 1 expired leases
+2026-11-10 02:56:14,080 worker INFO worker w7.4 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:56:14,812 worker INFO reaped 1 expired leases
+2026-11-10 02:56:15,938 worker INFO worker w6.5 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:56:17,436 worker INFO reaped 1 expired leases
+2026-11-10 02:56:17,862 worker INFO worker w2.5 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:56:19,076 worker INFO reaped 1 expired leases
+2026-11-10 02:56:19,879 worker INFO worker w2.6 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:56:20,788 worker INFO reaped 1 expired leases
+2026-11-10 02:56:22,071 worker INFO worker w7.5 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:56:22,954 worker INFO reaped 1 expired leases
+2026-11-10 02:56:24,486 worker INFO worker w2.7 started faults=no_fencing isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:56:24,799 worker INFO reaped 1 expired leases
+2026-11-10 02:56:26,114 worker INFO worker w5.5 started faults=no_fencing isolation=read_committed effect=db skew=3.0
+2026-11-10 02:56:26,741 worker INFO reaped 1 expired leases
+2026-11-10 02:56:28,176 worker INFO worker w6.6 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:56:29,445 worker INFO reaped 1 expired leases
+2026-11-10 02:56:30,666 worker INFO worker w6.7 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:56:31,152 worker INFO reaped 1 expired leases
+2026-11-10 02:56:32,859 worker INFO reaped 1 expired leases
+2026-11-10 02:56:33,027 worker INFO worker w6.8 started faults=no_fencing isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:56:34,975 worker INFO worker w7.6 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:56:35,527 worker INFO reaped 1 expired leases
+2026-11-10 02:56:36,665 worker INFO worker w7.7 started faults=no_fencing isolation=read_committed effect=db skew=1.0
+2026-11-10 02:56:37,954 worker INFO reaped 1 expired leases
+2026-11-10 02:56:38,457 worker INFO worker w7.7 stopped (serialization retries: 0)
+2026-11-10 02:56:38,459 worker INFO worker w6.8 stopped (serialization retries: 0)
+2026-11-10 02:56:38,465 worker INFO worker w5.5 stopped (serialization retries: 0)
+2026-11-10 02:56:38,477 worker INFO worker w2.7 stopped (serialization retries: 0)
+2026-11-10 02:56:38,494 worker INFO worker w4.1 stopped (serialization retries: 0)
+2026-11-10 02:56:38,496 worker INFO worker w1.5 stopped (serialization retries: 0)
+2026-11-10 02:56:38,497 worker INFO worker w3.0 stopped (serialization retries: 0)
+2026-11-10 02:56:38,506 worker INFO worker w0.0 stopped (serialization retries: 0)

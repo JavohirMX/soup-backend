@@ -1,0 +1,24 @@
+== load-001-100rps  20261110T030514Z  code=2bf9578fa64e
+target=100.0 rps for 120.0s mix={'create': 0.5, 'get': 0.3, 'list': 0.15, 'cancel': 0.05} job_ms=20-80 api=http://api:8000
+t=   0.0s sent=     0 in_flight=   0 queued=     0 running=  0 db_conns= 12
+t=  10.0s sent=  1001 in_flight=   0 queued=     0 running=  3 db_conns= 12
+t=  20.0s sent=  2001 in_flight=   1 queued=     1 running=  2 db_conns= 12
+t=  30.0s sent=  3001 in_flight=   1 queued=     2 running=  3 db_conns= 12
+t=  40.0s sent=  4001 in_flight=   0 queued=     1 running=  1 db_conns= 15
+t=  50.0s sent=  5001 in_flight=   0 queued=     1 running=  3 db_conns= 15
+t=  60.0s sent=  6001 in_flight=   0 queued=     0 running=  3 db_conns= 15
+t=  70.0s sent=  7001 in_flight=   1 queued=     1 running=  1 db_conns= 15
+t=  80.0s sent=  8001 in_flight=   1 queued=     1 running=  1 db_conns= 15
+t=  90.0s sent=  9001 in_flight=   1 queued=     1 running=  3 db_conns= 15
+t= 100.0s sent= 10001 in_flight=   1 queued=     1 running=  4 db_conns= 15
+t= 110.0s sent= 11001 in_flight=   1 queued=     1 running=  4 db_conns= 15
+
+== summary
+requests=12000 wall=120.0s achieved=100.0 rps generator_lag_at_end=-0.01s max_in_flight=15
+create  n=  6042 p50=    2.5ms p95=    4.4ms p99=    6.6ms max=  140.0ms status={201: 5461, 200: 581}
+get     n=  3586 p50=    1.8ms p95=    3.4ms p99=    5.3ms max=  124.4ms status={200: 3586}
+list    n=  1772 p50=    4.9ms p95=    7.4ms p99=    9.7ms max=  135.5ms status={200: 1772}
+cancel  n=   600 p50=    2.1ms p95=    3.9ms p99=    5.7ms max=   29.2ms status={409: 597, 202: 2, 200: 1}
+transport errors={} 5xx=0
+queue depth samples (every 10s): [0, 0, 1, 2, 1, 1, 0, 1, 1, 1, 1, 1]
+backlog drain after load stopped: 0.5s

@@ -1,0 +1,47 @@
+== chaos-012-ctl-no-fencing-sigstop  20261110T025640Z
+code=2bf9578fa64e faults=no_fencing effect_mode=db isolation=read_committed
+jobs=3000 workers=8 kill_interval=2.0±0.5s stop_frac=0.3 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x4 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.1s submitted= 2209 queued=1905 running=10 succeeded=208 failed=3 cancelled=83 kills=2 stops=0 workers_active=8
+t=  10.2s submitted= 3000 queued=2407 running=10 succeeded=430 failed=9 cancelled=144 kills=4 stops=0 workers_active=8
+t=  15.2s submitted= 3000 queued=2171 running=11 succeeded=659 failed=13 cancelled=146 kills=7 stops=0 workers_active=8
+t=  20.2s submitted= 3000 queued=1951 running=9 succeeded=878 failed=15 cancelled=147 kills=8 stops=1 workers_active=7
+t=  25.2s submitted= 3000 queued=1759 running=9 succeeded=1065 failed=20 cancelled=147 kills=10 stops=1 workers_active=7
+t=  30.3s submitted= 3000 queued=1572 running=9 succeeded=1252 failed=20 cancelled=147 kills=11 stops=3 workers_active=6
+t=  35.3s submitted= 3000 queued=1422 running=9 succeeded=1402 failed=20 cancelled=147 kills=14 stops=3 workers_active=6
+t=  40.4s submitted= 3000 queued=1222 running=9 succeeded=1593 failed=29 cancelled=147 kills=16 stops=3 workers_active=8
+t=  45.4s submitted= 3000 queued=1002 running=9 succeeded=1806 failed=36 cancelled=147 kills=18 stops=4 workers_active=7
+t=  50.4s submitted= 3000 queued=809 running=9 succeeded=1998 failed=37 cancelled=147 kills=20 stops=4 workers_active=7
+t=  55.5s submitted= 3000 queued=602 running=10 succeeded=2198 failed=43 cancelled=147 kills=22 stops=4 workers_active=8
+t=  60.5s submitted= 3000 queued=383 running=10 succeeded=2416 failed=44 cancelled=147 kills=24 stops=4 workers_active=8
+t=  65.5s submitted= 3000 queued=151 running=11 succeeded=2642 failed=49 cancelled=147 kills=27 stops=4 workers_active=8
+t=  70.6s submitted= 3000 queued=0 running=2 succeeded=2800 failed=51 cancelled=147 kills=29 stops=4 workers_active=8
+
+== summary
+wall=74.1s throughput=40.5 jobs/s
+final states: succeeded=2802 failed=51 cancelled=147 queued=0 running=0 total=3000
+chaos: kill -9=31 SIGSTOP=4 unexpected_worker_exits=0 []
+POST status={201: 2999, 200: 1740} client_errors(timeouts etc)=3 5xx=0 max_latency=1.09s
+POST kinds sent: {'orig': 3003, 'dup_later': 431, 'dup_concurrent': 1308}
+cancel status={202: 107, 409: 44, 200: 142} errors=0 max_latency=0.56s kinds={'running': 120, 'late': 30, 'early': 143}
+events: {'cancel_requested': 107, 'cancelled_queued': 142, 'claim': 2885, 'created': 3000, 'failed': 51, 'reap_cancelled': 5, 'requeue': 27, 'succeeded': 2806}
+executions: claims=2885 jobs_claimed=2858 re-executions=27 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 142, 1: 2831, 2: 27}
+side effects: total=2806 jobs_with_effect=2802 max_per_job=2
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[FAIL] at most one side effect per job
+       more than one side effect: 4  e.g. ['c4429625-71e6-4126-a36e-af8fccd65001 effects=2 state=succeeded', 'ce04d46c-ada8-4d0e-8451-05f4287949fe effects=2 state=succeeded', 'b74bc6f8-e5d8-4779-808e-c9f41cc3a8a7 effects=2 state=succeeded']
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[FAIL] cancel responses honoured
+       cancel acknowledged (200/202) but job not cancelled: 79  e.g. ['acc4b8dc-d707-4784-8620-cd0accdf1254 kind=running status=202 final=succeeded', '76f87ffa-6b04-46f4-89c2-6959340e8a1c kind=running status=202 final=succeeded', '2b673d44-7e32-4532-8c92-c4aad7e1d12a kind=running status=202 final=succeeded']
+[PASS] no double claim, epochs monotonic
+[FAIL] only the lease holder transitions a running job
+       terminal/requeue transition by non-holder: 4  e.g. ['85a3dbec-a49b-44fe-a0e6-b0d4caa7268e kind=succeeded epoch=1', 'b74bc6f8-e5d8-4779-808e-c9f41cc3a8a7 kind=succeeded epoch=1', 'c4429625-71e6-4126-a36e-af8fccd65001 kind=succeeded epoch=1']
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: /app/results/raw/chaos-012-ctl-no-fencing-sigstop.workers.log
+RESULT: FAIL

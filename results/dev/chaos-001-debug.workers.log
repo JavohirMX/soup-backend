@@ -1,0 +1,36 @@
+2026-11-10 10:05:07,019 worker INFO worker w3.0 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 10:05:07,022 worker INFO worker w0.0 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 10:05:07,033 worker INFO worker w2.0 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 10:05:07,037 worker INFO worker w6.0 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 10:05:07,040 worker INFO worker w1.0 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 10:05:07,043 worker INFO worker w7.0 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 10:05:07,046 worker INFO worker w4.0 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 10:05:07,048 worker INFO worker w5.0 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 10:05:09,327 worker INFO worker w6.1 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 10:05:10,817 worker INFO worker w4.1 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 10:05:12,930 worker INFO worker w0.1 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 10:05:14,105 worker INFO reaped 1 expired leases
+2026-11-10 10:05:15,147 worker INFO worker w1.1 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 10:05:15,723 worker INFO reaped 1 expired leases
+2026-11-10 10:05:16,670 worker INFO worker w0.2 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 10:05:17,734 worker INFO reaped 1 expired leases
+2026-11-10 10:05:18,539 worker INFO worker w1.2 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 10:05:20,021 worker INFO reaped 1 expired leases
+2026-11-10 10:05:20,737 worker INFO worker w6.2 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 10:05:21,653 worker INFO reaped 1 expired leases
+2026-11-10 10:05:23,173 worker INFO worker w5.1 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 10:05:25,519 worker INFO worker w2.1 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 10:05:27,789 worker INFO worker w1.3 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 10:05:29,376 worker INFO worker w0.3 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 10:05:30,934 worker INFO worker w4.2 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 10:05:33,310 worker INFO worker w4.3 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 10:05:35,745 worker INFO worker w3.1 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 10:05:37,667 worker INFO worker w0.4 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 10:05:38,556 worker INFO worker w3.1 stopped (serialization retries: 0)
+2026-11-10 10:05:38,557 worker INFO worker w6.2 stopped (serialization retries: 0)
+2026-11-10 10:05:38,558 worker INFO worker w5.1 stopped (serialization retries: 0)
+2026-11-10 10:05:38,571 worker INFO worker w4.3 stopped (serialization retries: 0)
+2026-11-10 10:05:38,571 worker INFO worker w1.3 stopped (serialization retries: 0)
+2026-11-10 10:05:38,572 worker INFO worker w2.1 stopped (serialization retries: 0)
+2026-11-10 10:05:38,591 worker INFO worker w0.4 stopped (serialization retries: 0)
+2026-11-10 10:05:38,594 worker INFO worker w7.0 stopped (serialization retries: 0)

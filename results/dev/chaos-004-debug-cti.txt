@@ -1,0 +1,37 @@
+== chaos-004-debug-cti  20261110T020554Z
+code=4a6e42114a24 faults=check_then_insert effect_mode=db isolation=read_committed
+jobs=800 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.2s submitted=  460 queued=223 running=10 succeeded=207 failed=6 cancelled=14 kills=2 stops=0 workers_active=8
+t=  10.2s submitted=  800 queued=327 running=10 succeeded=406 failed=7 cancelled=50 kills=4 stops=0 workers_active=8
+t=  15.3s submitted=  800 queued=110 running=10 succeeded=618 failed=12 cancelled=50 kills=7 stops=0 workers_active=8
+t=  20.3s submitted=  800 queued=0 running=2 succeeded=733 failed=15 cancelled=50 kills=9 stops=0 workers_active=8
+t=  25.3s submitted=  800 queued=0 running=0 succeeded=735 failed=15 cancelled=50 kills=12 stops=0 workers_active=8
+t=  30.3s submitted=  800 queued=0 running=0 succeeded=735 failed=15 cancelled=50 kills=14 stops=0 workers_active=8
+t=  35.3s submitted=  800 queued=0 running=0 succeeded=735 failed=15 cancelled=50 kills=16 stops=0 workers_active=8
+
+== summary
+wall=35.8s throughput=22.3 jobs/s
+final states: succeeded=735 failed=15 cancelled=50 queued=0 running=0 total=800
+chaos: kill -9=16 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 799, 200: 228} client_errors(timeouts etc)=5 5xx=0 max_latency=3.77s
+POST kinds sent: {'orig': 805, 'dup_later': 107, 'dup_concurrent': 120}
+cancel status={202: 24, 200: 31, 409: 21} errors=0 max_latency=2.31s kinds={'running': 32, 'early': 36, 'late': 8}
+events: {'cancel_requested': 24, 'cancelled': 18, 'cancelled_queued': 30, 'claim': 776, 'created': 800, 'failed': 15, 'reap_cancelled': 2, 'requeue': 6, 'succeeded': 735}
+executions: claims=776 jobs_claimed=770 re-executions=6 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 30, 1: 764, 2: 6}
+side effects: total=735 jobs_with_effect=735 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[PASS] no double claim, epochs monotonic
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: results/dev/chaos-004-debug-cti.workers.log
+RESULT: PASS

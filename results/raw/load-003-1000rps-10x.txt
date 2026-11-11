@@ -1,0 +1,14 @@
+== load-003-1000rps-10x  20261110T030920Z  code=2bf9578fa64e
+target=1000.0 rps for 60.0s mix={'create': 0.5, 'get': 0.3, 'list': 0.15, 'cancel': 0.05} job_ms=20-80 api=http://api:8000
+t=   0.0s sent=     0 in_flight=   0 queued=     0 running=  0 db_conns= 15
+t=  10.0s sent= 10001 in_flight=   4 queued=  3412 running=  4 db_conns= 19
+t=  20.2s sent= 19860 in_flight=7479 queued=  3619 running=  4 db_conns= 24
+t=  30.0s sent= 29784 in_flight=16787 queued=  3137 running=  4 db_conns= 24
+t=  41.4s sent= 35474 in_flight=22394 queued=  2296 running=  4 db_conns= 24
+
+== INVALID RUN: killed manually after ~20 min.
+The load generator itself (one Python asyncio process) saturated at 100% CPU and stopped making progress;
+at the time of inspection the API container was idle (0% CPU) and /healthz answered in 25ms.
+Whether the API was ALSO saturated during t=10..40s cannot be determined from this run.
+Treat it as a measurement of the generator, not of the system.
+Re-measured with 4 generator processes x 250 rps in parallel (load-004-*-10x-a..d).

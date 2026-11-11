@@ -1,0 +1,38 @@
+== chaos-003-debug-naive  20261110T020553Z
+code=4a6e42114a24 faults=naive_claim effect_mode=db isolation=read_committed
+jobs=800 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.1s submitted=  451 queued=245 running=9 succeeded=187 failed=1 cancelled=9 kills=2 stops=0 workers_active=8
+t=  10.2s submitted=  800 queued=386 running=8 succeeded=343 failed=4 cancelled=59 kills=4 stops=0 workers_active=8
+t=  15.2s submitted=  800 queued=201 running=10 succeeded=525 failed=5 cancelled=59 kills=7 stops=0 workers_active=8
+t=  20.2s submitted=  800 queued=18 running=4 succeeded=712 failed=7 cancelled=59 kills=10 stops=0 workers_active=8
+t=  25.2s submitted=  800 queued=0 running=1 succeeded=732 failed=8 cancelled=59 kills=12 stops=0 workers_active=8
+t=  30.3s submitted=  800 queued=0 running=0 succeeded=733 failed=8 cancelled=59 kills=15 stops=0 workers_active=8
+t=  35.3s submitted=  800 queued=0 running=0 succeeded=733 failed=8 cancelled=59 kills=17 stops=0 workers_active=8
+
+== summary
+wall=35.8s throughput=22.4 jobs/s
+final states: succeeded=733 failed=8 cancelled=59 queued=0 running=0 total=800
+chaos: kill -9=17 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 800, 200: 261} client_errors(timeouts etc)=2 5xx=0 max_latency=3.86s
+POST kinds sent: {'orig': 802, 'dup_later': 130, 'dup_concurrent': 131}
+cancel status={409: 17, 200: 33, 202: 28} errors=0 max_latency=1.93s kinds={'late': 8, 'early': 38, 'running': 32}
+events: {'cancel_requested': 28, 'cancelled': 25, 'cancelled_queued': 33, 'claim': 921, 'created': 800, 'failed': 8, 'reap_cancelled': 1, 'requeue': 7, 'stale_write_rejected': 145, 'succeeded': 733}
+executions: claims=921 jobs_claimed=767 re-executions=154 (at-least-once) stale_writes_rejected=145
+attempts histogram: {0: 33, 1: 633, 2: 119, 3: 11, 4: 3, 5: 1}
+side effects: total=733 jobs_with_effect=733 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[FAIL] no double claim, epochs monotonic
+       double claim (claimed while already held): 147  e.g. ['009d73d2-60f9-47e0-9755-fb09c00c618c epoch=2', '017c87fc-c691-49f2-9bdf-b6d09b755a2b epoch=2', '017c87fc-c691-49f2-9bdf-b6d09b755a2b epoch=3']
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: results/dev/chaos-003-debug-naive.workers.log
+RESULT: FAIL

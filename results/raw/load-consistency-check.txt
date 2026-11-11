@@ -1,0 +1,5 @@
+ jobs  | not_terminal | jobs_with_multiple_effects | succeeded_without_effect | effect_on_non_succeeded | duplicate_keys 
+-------+--------------+----------------------------+--------------------------+-------------------------+----------------
+ 41115 |            0 |                          0 |                        0 |                       0 |              0
+(1 row)
+

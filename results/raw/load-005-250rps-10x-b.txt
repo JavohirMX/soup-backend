@@ -1,0 +1,19 @@
+== load-005-250rps-10x-b  20261110T032448Z  code=2bf9578fa64e
+target=250.0 rps for 60.0s mix={'create': 0.5, 'get': 0.3, 'list': 0.15, 'cancel': 0.05} job_ms=20-80 api=http://api:8000
+t=   0.0s sent=     0 in_flight=   0 queued=     0 running=  0 db_conns= 27
+t=  10.0s sent=  2501 in_flight= 108 queued=  3232 running=  3 db_conns= 28
+t=  20.0s sent=  5001 in_flight= 449 queued=  5271 running=  4 db_conns= 28
+t=  30.0s sent=  7490 in_flight=1461 queued=  7302 running=  4 db_conns= 28
+t=  40.0s sent= 10000 in_flight=1557 queued=  9271 running=  4 db_conns= 28
+t=  50.0s sent= 12488 in_flight=2686 queued= 10867 running=  4 db_conns= 28
+t=  60.1s sent= 14985 in_flight=4016 queued= 12157 running=  4 db_conns= 28
+
+== summary
+requests=15000 wall=87.2s achieved=172.1 rps generator_lag_at_end=0.16s max_in_flight=4031
+create  n=  7575 p50= 4044.4ms p95=36298.7ms p99=47226.9ms max=61341.9ms status={201: 6821, 200: 754}
+get     n=  4429 p50= 3997.8ms p95=36542.1ms p99=46267.8ms max=62322.1ms status={200: 4429}
+list    n=  2225 p50= 3864.1ms p95=36362.3ms p99=44994.2ms max=61857.8ms status={200: 2225}
+cancel  n=   769 p50= 4281.7ms p95=36727.2ms p99=51256.2ms max=59214.2ms status={200: 538, 409: 230, 202: 1}
+transport errors={'create:ReadError': 1, 'get:RemoteProtocolError': 1} 5xx=0
+queue depth samples (every 10s): [0, 3232, 5271, 7302, 9271, 10867, 12157]
+backlog drain after load stopped: NOT drained within timeout

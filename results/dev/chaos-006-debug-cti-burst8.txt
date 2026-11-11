@@ -1,0 +1,39 @@
+== chaos-006-debug-cti-burst8  20261110T020651Z
+code=4a6e42114a24 faults=check_then_insert effect_mode=db isolation=read_committed
+jobs=800 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x8 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.4s submitted=  527 queued=274 running=10 succeeded=232 failed=1 cancelled=10 kills=2 stops=0 workers_active=8
+t=  10.5s submitted=  807 queued=298 running=10 succeeded=448 failed=4 cancelled=47 kills=4 stops=0 workers_active=8
+t=  15.6s submitted=  807 queued=77 running=10 succeeded=659 failed=12 cancelled=49 kills=7 stops=0 workers_active=8
+t=  20.6s submitted=  807 queued=0 running=2 succeeded=742 failed=14 cancelled=49 kills=9 stops=0 workers_active=8
+t=  25.6s submitted=  807 queued=0 running=0 succeeded=744 failed=14 cancelled=49 kills=12 stops=0 workers_active=8
+t=  30.6s submitted=  807 queued=0 running=0 succeeded=744 failed=14 cancelled=49 kills=14 stops=0 workers_active=8
+t=  35.6s submitted=  807 queued=0 running=0 succeeded=744 failed=14 cancelled=49 kills=17 stops=0 workers_active=8
+
+== summary
+wall=37.2s throughput=21.7 jobs/s
+final states: succeeded=744 failed=14 cancelled=49 queued=0 running=0 total=807
+chaos: kill -9=18 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 807, 200: 956} client_errors(timeouts etc)=2 5xx=0 max_latency=4.10s
+POST kinds sent: {'orig': 802, 'dup_later': 130, 'dup_concurrent': 833}
+cancel status={409: 25, 200: 34, 202: 23} errors=0 max_latency=3.10s kinds={'early': 42, 'running': 32, 'late': 8}
+events: {'cancel_requested': 23, 'cancelled': 11, 'cancelled_queued': 34, 'claim': 777, 'created': 807, 'failed': 14, 'reap_cancelled': 4, 'requeue': 4, 'succeeded': 744}
+executions: claims=777 jobs_claimed=773 re-executions=4 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 34, 1: 769, 2: 4}
+side effects: total=744 jobs_with_effect=744 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[FAIL] no duplicate jobs / ids per idempotency key
+       duplicate: key has >1 job in DB: 7  e.g. ["job-00080 -> ['90af346c-f01b-4f30-9b93-3c64c2278299', '1dacfedf-ab08-41e2-8816-6b9948ba44b8']", "job-00012 -> ['7d033bcf-976e-4f5f-9156-996186b8167c', '96507ead-be86-4357-bf46-9e011d561ed2']", "job-00764 -> ['d634e553-9241-410f-aeb9-c60a7e0da5d7', '76282a1a-e63c-46b4-829f-d9ac0cd279f8']"]
+       duplicate: POSTs for one key returned different ids: 7  e.g. ["job-00080 -> ['1dacfedf-ab08-41e2-8816-6b9948ba44b8', '90af346c-f01b-4f30-9b93-3c64c2278299']", "job-00012 -> ['7d033bcf-976e-4f5f-9156-996186b8167c', '96507ead-be86-4357-bf46-9e011d561ed2']", "job-00764 -> ['76282a1a-e63c-46b4-829f-d9ac0cd279f8', 'd634e553-9241-410f-aeb9-c60a7e0da5d7']"]
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[PASS] no double claim, epochs monotonic
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: results/dev/chaos-006-debug-cti-burst8.workers.log
+RESULT: FAIL

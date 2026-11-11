@@ -1,0 +1,68 @@
+x-app: &app
+  build: .
+  image: soup-queue:latest
+  environment: &app-env
+    DATABASE_URL: postgresql://soup:soup@postgres:5432/soup
+  depends_on:
+    postgres:
+      condition: service_healthy
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: soup
+      POSTGRES_PASSWORD: soup
+      POSTGRES_DB: soup
+    command: postgres -c max_connections=300
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soup -d soup"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+
+  api:
+    <<: *app
+    command: ["uv", "run", "--frozen", "--no-dev", "uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+
+  worker:
+    <<: *app
+    command: ["uv", "run", "--frozen", "--no-dev", "python", "-m", "app.worker"]
+    deploy:
+      replicas: 4
+
+  # The chaos harness owns its own API process and 8 worker processes (so it
+  # can kill -9 / SIGSTOP them) and runs against a freshly created database,
+  # so it does not interfere with the api/worker services above.
+  #   docker compose --profile chaos run --rm chaos [harness args]
+  chaos:
+    <<: *app
+    profiles: ["chaos"]
+    restart: "no"
+    entrypoint: ["uv", "run", "--frozen", "--no-dev", "python", "-m", "chaos.harness"]
+    command: []
+    environment:
+      <<: *app-env
+      ADMIN_DATABASE_URL: postgresql://soup:soup@postgres:5432/postgres
+    volumes:
+      - ./results:/app/results
+
+  # Silent-failure scenarios and the load generator use the same image.
+  #   docker compose --profile chaos run --rm tools python -m chaos.silent.run_all
+  #   docker compose --profile chaos run --rm tools python -m chaos.load
+  tools:
+    <<: *app
+    profiles: ["chaos"]
+    restart: "no"
+    entrypoint: ["uv", "run", "--frozen", "--no-dev"]
+    command: ["python", "-m", "chaos.silent.run_all"]
+    environment:
+      <<: *app-env
+      ADMIN_DATABASE_URL: postgresql://soup:soup@postgres:5432/postgres
+    volumes:
+      - ./results:/app/results

@@ -1,0 +1,45 @@
+== chaos-015-ctl-check-then-insert-burst2  20261110T030035Z
+code=2bf9578fa64e faults=check_then_insert effect_mode=db isolation=read_committed
+jobs=3000 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x2 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.2s submitted= 1845 queued=1538 running=10 succeeded=219 failed=3 cancelled=75 kills=2 stops=0 workers_active=8
+t=  10.2s submitted= 3010 queued=2406 running=10 succeeded=400 failed=4 cancelled=190 kills=4 stops=0 workers_active=8
+t=  15.2s submitted= 3010 queued=2181 running=11 succeeded=600 failed=7 cancelled=211 kills=7 stops=0 workers_active=8
+t=  20.3s submitted= 3010 queued=1959 running=10 succeeded=816 failed=13 cancelled=212 kills=9 stops=0 workers_active=8
+t=  25.3s submitted= 3010 queued=1739 running=11 succeeded=1027 failed=21 cancelled=212 kills=12 stops=0 workers_active=8
+t=  30.3s submitted= 3010 queued=1512 running=10 succeeded=1249 failed=27 cancelled=212 kills=14 stops=0 workers_active=8
+t=  35.4s submitted= 3010 queued=1291 running=10 succeeded=1466 failed=31 cancelled=212 kills=16 stops=0 workers_active=8
+t=  40.4s submitted= 3010 queued=1065 running=11 succeeded=1683 failed=39 cancelled=212 kills=19 stops=0 workers_active=8
+t=  45.4s submitted= 3010 queued=841 running=10 succeeded=1903 failed=44 cancelled=212 kills=21 stops=0 workers_active=8
+t=  50.5s submitted= 3010 queued=621 running=11 succeeded=2116 failed=50 cancelled=212 kills=24 stops=0 workers_active=8
+t=  55.5s submitted= 3010 queued=403 running=10 succeeded=2329 failed=56 cancelled=212 kills=26 stops=0 workers_active=8
+t=  60.5s submitted= 3010 queued=181 running=11 succeeded=2548 failed=58 cancelled=212 kills=29 stops=0 workers_active=8
+t=  65.6s submitted= 3010 queued=0 running=2 succeeded=2735 failed=61 cancelled=212 kills=32 stops=0 workers_active=8
+
+== summary
+wall=69.1s throughput=43.6 jobs/s
+final states: succeeded=2737 failed=61 cancelled=212 queued=0 running=0 total=3010
+chaos: kill -9=33 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 3008, 200: 912} client_errors(timeouts etc)=8 5xx=0 max_latency=1.34s
+POST kinds sent: {'orig': 3008, 'dup_later': 477, 'dup_concurrent': 443}
+cancel status={409: 47, 200: 139, 202: 105} errors=0 max_latency=0.68s kinds={'running': 120, 'late': 30, 'early': 141}
+events: {'cancel_requested': 105, 'cancelled': 68, 'cancelled_queued': 139, 'claim': 2897, 'created': 3010, 'failed': 61, 'reap_cancelled': 5, 'requeue': 26, 'succeeded': 2737}
+executions: claims=2897 jobs_claimed=2871 re-executions=26 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 139, 1: 2845, 2: 26}
+side effects: total=2737 jobs_with_effect=2737 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[FAIL] no duplicate jobs / ids per idempotency key
+       duplicate: key has >1 job in DB: 10  e.g. ["job-00028 -> ['741ad07d-4c06-4b8d-b032-9f2d6d539bb4', '8e841e54-aeee-46af-9543-be6490ecf040']", "job-00887 -> ['6ef02445-8aae-4b05-9ea9-b6c65621bbfb', '6f342e3c-59ed-41c6-a005-012d9492272f']", "job-02041 -> ['15ddcb9a-6bd5-4fff-9701-17bf76db8dd9', 'a203ad02-b01a-4183-adc1-2e8945fd01dc']"]
+       duplicate: POSTs for one key returned different ids: 10  e.g. ["job-00028 -> ['741ad07d-4c06-4b8d-b032-9f2d6d539bb4', '8e841e54-aeee-46af-9543-be6490ecf040']", "job-00887 -> ['6ef02445-8aae-4b05-9ea9-b6c65621bbfb', '6f342e3c-59ed-41c6-a005-012d9492272f']", "job-02041 -> ['15ddcb9a-6bd5-4fff-9701-17bf76db8dd9', 'a203ad02-b01a-4183-adc1-2e8945fd01dc']"]
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[PASS] no double claim, epochs monotonic
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: /app/results/raw/chaos-015-ctl-check-then-insert-burst2.workers.log
+RESULT: FAIL

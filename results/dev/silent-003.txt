@@ -1,0 +1,72 @@
+== silent-003  20261110T021230Z  code=acd7538e9611
+
+-- 1. double claim: 8 workers claim the same single queued job at the same instant
+[OK      ] (expect-0) SKIP LOCKED conditional claim
+           {"trials": 60, "claims_per_trial": {"1": 60}, "errors_without_retry": {}, "violations": 0, "seconds": 0.8}
+[DETECTED] (control) naive SELECT-then-UPDATE claim
+           {"trials": 60, "claims_per_trial": {"8": 60}, "errors_without_retry": {}, "violations": 60, "seconds": 1.0}
+
+-- 4. duplicate on request retry: 16 identical POSTs (same key) at the same instant
+[OK      ] (expect-0) INSERT ... ON CONFLICT DO NOTHING + unique constraint
+           {"trials": 20, "clients": 16, "rows_per_key": {"1": 20}, "distinct_ids_returned": {"1": 20}, "created_true_count": {"1": 20}, "errors_without_retry": {}, "violations": 0, "seconds": 0.5}
+[DETECTED] (control) check-then-insert, no unique constraint
+           {"trials": 20, "clients": 16, "rows_per_key": {"16": 20}, "distinct_ids_returned": {"16": 20}, "created_true_count": {"16": 20}, "errors_without_retry": {}, "violations": 40, "seconds": 0.4}
+[OK      ] (expect-0) check-then-insert, unique constraint kept
+           {"trials": 20, "clients": 16, "rows_per_key": {"1": 20}, "distinct_ids_returned": {"1": 20}, "created_true_count": {"1": 20}, "errors_without_retry": {"UniqueViolation": 299}, "violations": 0, "seconds": 0.4, "note": "constraint present: race is not silent, it surfaces as UniqueViolation (HTTP 500)"}
+[OK      ] (expect-0) same key, different payload (must be 409, never merged)
+           {"trials": 6, "results": {"IdempotencyConflict": 48}, "violations": 0, "seconds": 0.2}
+
+-- 5. isolation level: same races under each level, first WITHOUT retry, then with retry
+[OK      ] (expect-0) double claim [read_committed, retry=False]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {}, "violations": 0, "seconds": 0.4}
+[OK      ] (expect-0) complete vs cancel [read_committed, retry=False]
+           {"trials": 20, "outcomes": {"cancel=too_late final=succeeded": 6, "cancel=cancel_requested final=cancelled": 14}, "errors_without_retry": {}, "violations": 0, "examples": [], "seconds": 0.3}
+[OK      ] (expect-0) duplicate create [read_committed, retry=False]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) double claim [read_committed, retry=True]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {}, "violations": 0, "seconds": 0.5}
+[OK      ] (expect-0) complete vs cancel [read_committed, retry=True]
+           {"trials": 20, "outcomes": {"cancel=too_late final=succeeded": 7, "cancel=cancel_requested final=cancelled": 13}, "errors_without_retry": {}, "violations": 0, "examples": [], "seconds": 0.4}
+[OK      ] (expect-0) duplicate create [read_committed, retry=True]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) double claim [repeatable_read, retry=False]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {"SerializationFailure": 1}, "violations": 0, "seconds": 0.4}
+[BUG     ] (expect-0) complete vs cancel [repeatable_read, retry=False]
+           {"trials": 20, "outcomes": {"cancel=SerializationFailure final=succeeded": 13, "cancel=cancel_requested final=running": 7}, "errors_without_retry": {"SerializationFailure": 20}, "violations": 7, "examples": ["cancel acknowledged (cancel_requested) but final=running effects=0", "cancel acknowledged (cancel_requested) but final=running effects=0", "cancel acknowledged (cancel_requested) but final=running effects=0"], "seconds": 0.8}
+[OK      ] (expect-0) duplicate create [repeatable_read, retry=False]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {"SerializationFailure": 90}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) double claim [repeatable_read, retry=True]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) complete vs cancel [repeatable_read, retry=True]
+           {"trials": 20, "outcomes": {"cancel=too_late final=succeeded": 10, "cancel=cancel_requested final=cancelled": 10}, "errors_without_retry": {}, "violations": 0, "examples": [], "seconds": 0.5}
+[OK      ] (expect-0) duplicate create [repeatable_read, retry=True]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) double claim [serializable, retry=False]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {"SerializationFailure": 2}, "violations": 0, "seconds": 0.4}
+[BUG     ] (expect-0) complete vs cancel [serializable, retry=False]
+           {"trials": 20, "outcomes": {"cancel=cancel_requested final=running": 8, "cancel=SerializationFailure final=succeeded": 12}, "errors_without_retry": {"SerializationFailure": 20}, "violations": 8, "examples": ["cancel acknowledged (cancel_requested) but final=running effects=0", "cancel acknowledged (cancel_requested) but final=running effects=0", "cancel acknowledged (cancel_requested) but final=running effects=0"], "seconds": 0.5}
+[OK      ] (expect-0) duplicate create [serializable, retry=False]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {"SerializationFailure": 90}, "violations": 0, "seconds": 0.3}
+[OK      ] (expect-0) double claim [serializable, retry=True]
+           {"trials": 20, "claims_per_trial": {"1": 20}, "errors_without_retry": {}, "violations": 0, "seconds": 0.5}
+[OK      ] (expect-0) complete vs cancel [serializable, retry=True]
+           {"trials": 20, "outcomes": {"cancel=too_late final=succeeded": 5, "cancel=cancel_requested final=cancelled": 15}, "errors_without_retry": {}, "violations": 0, "examples": [], "seconds": 0.6}
+[OK      ] (expect-0) duplicate create [serializable, retry=True]
+           {"trials": 6, "clients": 16, "rows_per_key": {"1": 6}, "distinct_ids_returned": {"1": 6}, "created_true_count": {"1": 6}, "errors_without_retry": {}, "violations": 0, "seconds": 0.3}
+
+-- 6. clock skew
+           observed offset, this process vs Postgres: {"db_minus_local_ms": {"min": -0.74, "median": -0.47, "max": -0.4}, "rtt_ms_median": 0.14}
+[OK      ] (expect-0) DB clock, worker skews -4s/+4s
+           {"mode": "db_clock", "claimer_skew_s": -4, "reaper_skew_s": 4, "ttl_s": 5.0, "trials": 200, "premature_reaps": 0, "violations": 0, "seconds": 3.4}
+[OK      ] (expect-0) DB clock, worker skews -1s/+1s
+           {"mode": "db_clock", "claimer_skew_s": -1, "reaper_skew_s": 1, "ttl_s": 5.0, "trials": 200, "premature_reaps": 0, "violations": 0, "seconds": 4.2}
+[OK      ] (expect-0) DB clock, worker skews +0s/+30s
+           {"mode": "db_clock", "claimer_skew_s": 0, "reaper_skew_s": 30, "ttl_s": 5.0, "trials": 200, "premature_reaps": 0, "violations": 0, "seconds": 3.8}
+[DETECTED] (control) worker clock, skews -4s/+4s (|diff| > TTL)
+           {"mode": "worker_clock", "claimer_skew_s": -4, "reaper_skew_s": 4, "ttl_s": 5.0, "trials": 200, "premature_reaps": 200, "violations": 200, "seconds": 3.8}
+[OK      ] (expect-0) worker clock, skews -1s/+1s (|diff| < TTL)
+           {"mode": "worker_clock", "claimer_skew_s": -1, "reaper_skew_s": 1, "ttl_s": 5.0, "trials": 200, "premature_reaps": 0, "violations": 0, "seconds": 4.1, "note": "skew diff < TTL: no premature reap, but the effective lease silently shrinks by 2s"}
+
+-- 7. worker frozen inside an open transaction (holding the row lock)
+[DETECTED] (control) no idle_in_transaction_session_timeout
+           {"idle_in_transaction_session_timeout_ms": null, "freeze_s": 3.0, "lease_expired": true, "reaper_result": "nothing reaped (row locked, skipped)", "cancel": "blocked on row lock (lock_timeout 1s)", "cancel_ms": 1009, "state_while_frozen": "running", "worker_commit_on_wake": "committed", "final_state": "running", "violations": 1, "seconds": 4.1}

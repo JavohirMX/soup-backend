@@ -1,0 +1,47 @@
+== chaos-013-ctl-naive-claim  20261110T025756Z
+code=2bf9578fa64e faults=naive_claim effect_mode=db isolation=read_committed
+jobs=3000 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x4 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.2s submitted= 1617 queued=1332 running=9 succeeded=204 failed=4 cancelled=68 kills=2 stops=0 workers_active=8
+t=  10.2s submitted= 3000 queued=2428 running=9 succeeded=351 failed=6 cancelled=206 kills=4 stops=0 workers_active=8
+t=  15.2s submitted= 3000 queued=2239 running=8 succeeded=518 failed=9 cancelled=226 kills=6 stops=0 workers_active=8
+t=  20.3s submitted= 3000 queued=2048 running=10 succeeded=702 failed=13 cancelled=227 kills=9 stops=0 workers_active=8
+t=  25.3s submitted= 3000 queued=1879 running=7 succeeded=873 failed=14 cancelled=227 kills=11 stops=0 workers_active=8
+t=  30.4s submitted= 3000 queued=1678 running=9 succeeded=1071 failed=15 cancelled=227 kills=13 stops=0 workers_active=8
+t=  35.4s submitted= 3000 queued=1511 running=7 succeeded=1236 failed=19 cancelled=227 kills=16 stops=0 workers_active=8
+t=  40.4s submitted= 3000 queued=1332 running=9 succeeded=1409 failed=23 cancelled=227 kills=18 stops=0 workers_active=8
+t=  45.5s submitted= 3000 queued=1165 running=10 succeeded=1572 failed=26 cancelled=227 kills=21 stops=0 workers_active=8
+t=  50.5s submitted= 3000 queued=1015 running=9 succeeded=1721 failed=28 cancelled=227 kills=23 stops=0 workers_active=8
+t=  55.5s submitted= 3000 queued=854 running=5 succeeded=1881 failed=33 cancelled=227 kills=25 stops=0 workers_active=8
+t=  60.6s submitted= 3000 queued=690 running=6 succeeded=2041 failed=36 cancelled=227 kills=28 stops=0 workers_active=8
+t=  65.6s submitted= 3000 queued=527 running=7 succeeded=2201 failed=38 cancelled=227 kills=30 stops=0 workers_active=8
+t=  70.7s submitted= 3000 queued=338 running=9 succeeded=2383 failed=43 cancelled=227 kills=32 stops=0 workers_active=8
+t=  75.7s submitted= 3000 queued=164 running=8 succeeded=2554 failed=47 cancelled=227 kills=35 stops=0 workers_active=8
+t=  80.8s submitted= 3000 queued=18 running=8 succeeded=2695 failed=52 cancelled=227 kills=37 stops=0 workers_active=8
+
+== summary
+wall=85.3s throughput=35.2 jobs/s
+final states: succeeded=2719 failed=54 cancelled=227 queued=0 running=0 total=3000
+chaos: kill -9=40 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 2998, 200: 1765} client_errors(timeouts etc)=4 5xx=0 max_latency=1.17s
+POST kinds sent: {'orig': 3004, 'dup_concurrent': 1323, 'dup_later': 440}
+cancel status={202: 107, 409: 44, 200: 151} errors=0 max_latency=0.76s kinds={'running': 120, 'late': 30, 'early': 152}
+events: {'cancel_requested': 107, 'cancelled': 74, 'cancelled_queued': 148, 'claim': 3547, 'created': 3000, 'failed': 54, 'reap_cancelled': 5, 'requeue': 23, 'stale_write_rejected': 663, 'succeeded': 2719}
+executions: claims=3547 jobs_claimed=2852 re-executions=695 (at-least-once) stale_writes_rejected=663
+attempts histogram: {0: 148, 1: 2317, 2: 409, 3: 102, 4: 17, 5: 5, 6: 1, 7: 1}
+side effects: total=2719 jobs_with_effect=2719 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[FAIL] no double claim, epochs monotonic
+       double claim (claimed while already held): 672  e.g. ['0101a45b-eeaf-468a-9ea9-d004ba5790ea epoch=2', '0101a45b-eeaf-468a-9ea9-d004ba5790ea epoch=3', '0101a45b-eeaf-468a-9ea9-d004ba5790ea epoch=4']
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: /app/results/raw/chaos-013-ctl-naive-claim.workers.log
+RESULT: FAIL

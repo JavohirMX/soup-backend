@@ -1,0 +1,106 @@
+2026-11-10 02:53:56,149 worker INFO worker w6.0 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:53:56,156 worker INFO worker w1.0 started faults=none isolation=read_committed effect=file skew=4.0
+2026-11-10 02:53:56,162 worker INFO worker w2.0 started faults=none isolation=read_committed effect=file skew=-4.0
+2026-11-10 02:53:56,170 worker INFO worker w5.0 started faults=none isolation=read_committed effect=file skew=3.0
+2026-11-10 02:53:56,177 worker INFO worker w4.0 started faults=none isolation=read_committed effect=file skew=-2.0
+2026-11-10 02:53:56,183 worker INFO worker w0.0 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:53:56,190 worker INFO worker w3.0 started faults=none isolation=read_committed effect=file skew=2.0
+2026-11-10 02:53:56,194 worker INFO worker w7.0 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:54:03,794 worker INFO reaped 1 expired leases
+2026-11-10 02:54:05,248 worker INFO reaped 1 expired leases
+2026-11-10 02:54:06,311 worker INFO lost lease job=875f61bb-1e47-449e-b9d3-241efa404574 epoch=1, abandoning
+2026-11-10 02:54:07,203 worker INFO reaped 1 expired leases
+2026-11-10 02:54:08,121 worker INFO lost lease job=d68776a5-2936-4192-bba9-53c30ee9c254 epoch=1, abandoning
+2026-11-10 02:54:09,166 worker INFO reaped 1 expired leases
+2026-11-10 02:54:09,938 worker INFO lost lease job=83b18ffe-bb5c-41ff-93af-f5d655b28491 epoch=1, abandoning
+2026-11-10 02:54:11,141 worker INFO reaped 1 expired leases
+2026-11-10 02:54:11,796 worker INFO worker w7.1 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:54:11,954 worker INFO lost lease job=cb231da0-05db-4831-b251-980b5a17e319 epoch=1, abandoning
+2026-11-10 02:54:12,856 worker INFO reaped 1 expired leases
+2026-11-10 02:54:14,167 worker INFO lost lease job=575b1dca-9493-42c8-9028-236531baac7b epoch=1, abandoning
+2026-11-10 02:54:14,169 worker INFO reaped 1 expired leases
+2026-11-10 02:54:14,980 worker INFO worker w3.1 started faults=none isolation=read_committed effect=file skew=2.0
+2026-11-10 02:54:15,786 worker INFO lost lease job=60613424-cc28-4d66-a8ca-335214b06c7e epoch=1, abandoning
+2026-11-10 02:54:16,466 worker INFO reaped 1 expired leases
+2026-11-10 02:54:17,398 worker INFO lost lease job=89257480-764c-47c1-9678-a16c6ded7cf7 epoch=1, abandoning
+2026-11-10 02:54:17,465 worker INFO worker w4.1 started faults=none isolation=read_committed effect=file skew=-2.0
+2026-11-10 02:54:18,407 worker INFO reaped 1 expired leases
+2026-11-10 02:54:19,085 worker INFO worker w0.1 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:54:19,956 worker INFO reaped 1 expired leases
+2026-11-10 02:54:20,722 worker INFO worker w4.2 started faults=none isolation=read_committed effect=file skew=-2.0
+2026-11-10 02:54:21,434 worker INFO lost lease job=da3d6c4c-2290-4043-a1e5-0897732e1e8b epoch=1, abandoning
+2026-11-10 02:54:22,376 worker INFO reaped 1 expired leases
+2026-11-10 02:54:22,852 worker INFO worker w7.2 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:54:23,924 worker INFO reaped 1 expired leases
+2026-11-10 02:54:25,478 worker INFO reaped 1 expired leases
+2026-11-10 02:54:27,237 worker INFO worker w2.1 started faults=none isolation=read_committed effect=file skew=-4.0
+2026-11-10 02:54:27,745 worker INFO reaped 1 expired leases
+2026-11-10 02:54:29,652 worker INFO worker w6.1 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:54:30,082 worker INFO reaped 1 expired leases
+2026-11-10 02:54:31,541 worker INFO worker w1.1 started faults=none isolation=read_committed effect=file skew=4.0
+2026-11-10 02:54:32,280 worker INFO reaped 1 expired leases
+2026-11-10 02:54:33,122 worker INFO lost lease job=edfe8a45-e33c-44fd-9e23-6f3b349044c7 epoch=1, abandoning
+2026-11-10 02:54:34,529 worker INFO reaped 1 expired leases
+2026-11-10 02:54:35,861 worker INFO worker w5.1 started faults=none isolation=read_committed effect=file skew=3.0
+2026-11-10 02:54:36,369 worker INFO reaped 1 expired leases
+2026-11-10 02:54:37,830 worker INFO worker w0.2 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:54:38,465 worker INFO reaped 1 expired leases
+2026-11-10 02:54:39,497 worker INFO worker w3.2 started faults=none isolation=read_committed effect=file skew=2.0
+2026-11-10 02:54:40,641 worker INFO reaped 1 expired leases
+2026-11-10 02:54:41,374 worker INFO lost lease job=3402b6c0-9b9d-43f9-8d6b-aa3cad3fff3b epoch=1, abandoning
+2026-11-10 02:54:42,672 worker INFO reaped 1 expired leases
+2026-11-10 02:54:44,146 worker INFO worker w4.3 started faults=none isolation=read_committed effect=file skew=-2.0
+2026-11-10 02:54:44,661 worker INFO reaped 1 expired leases
+2026-11-10 02:54:45,759 worker INFO worker w6.2 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:54:46,964 worker INFO reaped 1 expired leases
+2026-11-10 02:54:49,115 worker INFO reaped 1 expired leases
+2026-11-10 02:54:49,186 worker INFO worker w7.3 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:54:50,031 worker INFO lost lease job=f71a9304-e974-4343-9830-a54cb4645b35 epoch=1, abandoning
+2026-11-10 02:54:50,792 worker INFO worker w5.2 started faults=none isolation=read_committed effect=file skew=3.0
+2026-11-10 02:54:50,794 worker INFO reaped 1 expired leases
+2026-11-10 02:54:52,565 worker INFO reaped 1 expired leases
+2026-11-10 02:54:53,939 worker INFO reaped 1 expired leases
+2026-11-10 02:54:55,476 worker INFO lost lease job=55ddcbfc-f59b-495e-8889-f6b777fd6eed epoch=1, abandoning
+2026-11-10 02:54:55,892 worker INFO reaped 1 expired leases
+2026-11-10 02:54:57,173 worker INFO worker w3.3 started faults=none isolation=read_committed effect=file skew=2.0
+2026-11-10 02:54:57,981 worker INFO reaped 1 expired leases
+2026-11-10 02:54:59,188 worker INFO worker w7.4 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:54:59,672 worker INFO reaped 1 expired leases
+2026-11-10 02:55:00,912 worker INFO lost lease job=1fbacdbf-7bdb-4ff1-bbc1-c20b15146213 epoch=1, abandoning
+2026-11-10 02:55:01,455 worker INFO worker w0.3 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:55:02,071 worker INFO reaped 1 expired leases
+2026-11-10 02:55:02,946 worker WARNING stale write rejected job=e9167618-03e3-4c38-bb2c-0ad057492013 epoch=1 (lease was taken over)
+2026-11-10 02:55:03,113 worker INFO worker w0.4 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:55:04,001 worker INFO reaped 1 expired leases
+2026-11-10 02:55:04,733 worker INFO worker w7.5 started faults=none isolation=read_committed effect=file skew=1.0
+2026-11-10 02:55:06,547 worker INFO reaped 1 expired leases
+2026-11-10 02:55:07,180 worker INFO worker w2.2 started faults=none isolation=read_committed effect=file skew=-4.0
+2026-11-10 02:55:07,857 worker INFO reaped 1 expired leases
+2026-11-10 02:55:08,802 worker INFO worker w6.3 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:55:09,515 worker INFO reaped 1 expired leases
+2026-11-10 02:55:10,337 worker INFO worker w3.4 started faults=none isolation=read_committed effect=file skew=2.0
+2026-11-10 02:55:11,886 worker INFO reaped 1 expired leases
+2026-11-10 02:55:12,206 worker INFO worker w1.2 started faults=none isolation=read_committed effect=file skew=4.0
+2026-11-10 02:55:13,608 worker INFO reaped 1 expired leases
+2026-11-10 02:55:13,746 worker INFO worker w6.4 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:55:15,352 worker INFO reaped 1 expired leases
+2026-11-10 02:55:16,027 worker INFO worker w6.5 started faults=none isolation=read_committed effect=file skew=-3.0
+2026-11-10 02:55:17,009 worker INFO reaped 1 expired leases
+2026-11-10 02:55:17,996 worker INFO worker w4.4 started faults=none isolation=read_committed effect=file skew=-2.0
+2026-11-10 02:55:18,693 worker INFO reaped 1 expired leases
+2026-11-10 02:55:20,901 worker INFO reaped 1 expired leases
+2026-11-10 02:55:22,644 worker INFO worker w0.5 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:55:23,368 worker INFO reaped 1 expired leases
+2026-11-10 02:55:24,666 worker INFO worker w1.3 started faults=none isolation=read_committed effect=file skew=4.0
+2026-11-10 02:55:25,393 worker INFO reaped 1 expired leases
+2026-11-10 02:55:27,163 worker INFO worker w0.6 started faults=none isolation=read_committed effect=file skew=0.0
+2026-11-10 02:55:27,458 worker INFO reaped 1 expired leases
+2026-11-10 02:55:27,865 worker INFO lost lease job=d9d64634-7a5a-4a66-8b60-7b59a919111b epoch=1, abandoning
+2026-11-10 02:55:27,865 worker INFO worker w5.2 stopped (serialization retries: 0)
+2026-11-10 02:55:27,873 worker INFO worker w4.4 stopped (serialization retries: 0)
+2026-11-10 02:55:27,880 worker INFO worker w2.2 stopped (serialization retries: 0)
+2026-11-10 02:55:27,881 worker INFO worker w7.5 stopped (serialization retries: 0)
+2026-11-10 02:55:27,884 worker INFO worker w1.3 stopped (serialization retries: 0)
+2026-11-10 02:55:27,911 worker INFO worker w3.4 stopped (serialization retries: 0)
+2026-11-10 02:55:27,911 worker INFO worker w6.5 stopped (serialization retries: 0)
+2026-11-10 02:55:27,917 worker INFO worker w0.6 stopped (serialization retries: 0)

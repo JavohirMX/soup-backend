@@ -1,0 +1,18 @@
+== load-002-100rps-longjobs-4workers  20261110T030725Z  code=2bf9578fa64e
+target=100.0 rps for 60.0s mix={'create': 0.5, 'get': 0.3, 'list': 0.15, 'cancel': 0.05} job_ms=50-300 api=http://api:8000
+t=   0.0s sent=     0 in_flight=   0 queued=     0 running=  0 db_conns= 15
+t=  10.0s sent=  1001 in_flight=   1 queued=   192 running=  4 db_conns= 15
+t=  20.0s sent=  2001 in_flight=   1 queued=   376 running=  4 db_conns= 15
+t=  30.0s sent=  3001 in_flight=   1 queued=   592 running=  4 db_conns= 15
+t=  40.0s sent=  4001 in_flight=   0 queued=   759 running=  4 db_conns= 15
+t=  50.0s sent=  5001 in_flight=   1 queued=   977 running=  4 db_conns= 15
+
+== summary
+requests=6000 wall=60.0s achieved=100.0 rps generator_lag_at_end=-0.01s max_in_flight=2
+create  n=  2938 p50=    2.7ms p95=    4.7ms p99=    5.6ms max=   11.3ms status={201: 2644, 200: 294}
+get     n=  1875 p50=    1.9ms p95=    3.5ms p99=    4.3ms max=   13.8ms status={200: 1875}
+list    n=   885 p50=    5.4ms p95=    8.0ms p99=    9.2ms max=   12.0ms status={200: 885}
+cancel  n=   302 p50=    2.4ms p95=    4.2ms p99=    5.5ms max=    8.1ms status={202: 2, 200: 130, 409: 170}
+transport errors={} 5xx=0
+queue depth samples (every 10s): [0, 192, 376, 592, 759, 977]
+backlog drain after load stopped: 53.9s

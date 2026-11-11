@@ -1,0 +1,231 @@
+2026-11-10 02:26:23,450 worker INFO worker w1.0 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:26:23,461 worker INFO worker w2.0 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:26:23,468 worker INFO worker w4.0 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:26:23,473 worker INFO worker w7.0 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:26:23,478 worker INFO worker w0.0 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:26:23,486 worker INFO worker w5.0 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:26:23,494 worker INFO worker w3.0 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:26:23,503 worker INFO worker w6.0 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:26:25,300 worker INFO worker w7.1 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:26:27,264 worker INFO worker w7.2 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:26:29,410 worker INFO worker w3.1 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:26:30,248 worker INFO reaped 1 expired leases
+2026-11-10 02:26:31,312 worker INFO worker w5.1 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:26:32,358 worker INFO reaped 1 expired leases
+2026-11-10 02:26:33,156 worker INFO worker w6.1 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:26:34,373 worker INFO reaped 1 expired leases
+2026-11-10 02:26:34,978 worker INFO worker w2.1 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:26:36,149 worker INFO reaped 1 expired leases
+2026-11-10 02:26:37,126 worker INFO worker w0.1 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:26:38,025 worker INFO reaped 1 expired leases
+2026-11-10 02:26:38,740 worker INFO worker w5.2 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:26:39,606 worker INFO reaped 1 expired leases
+2026-11-10 02:26:40,969 worker INFO worker w6.2 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:26:41,827 worker INFO reaped 1 expired leases
+2026-11-10 02:26:42,642 worker INFO worker w5.3 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:26:43,633 worker INFO reaped 1 expired leases
+2026-11-10 02:26:44,983 worker INFO worker w7.3 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:26:45,949 worker INFO reaped 1 expired leases
+2026-11-10 02:26:47,373 worker INFO worker w2.2 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:26:47,655 worker INFO reaped 1 expired leases
+2026-11-10 02:26:49,713 worker INFO worker w4.1 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:26:49,989 worker INFO reaped 1 expired leases
+2026-11-10 02:26:51,980 worker INFO worker w4.2 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:26:52,306 worker INFO reaped 1 expired leases
+2026-11-10 02:26:54,041 worker INFO worker w3.2 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:26:54,765 worker INFO reaped 1 expired leases
+2026-11-10 02:26:55,787 worker INFO worker w5.4 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:26:56,859 worker INFO reaped 1 expired leases
+2026-11-10 02:26:57,414 worker INFO worker w0.2 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:26:59,111 worker INFO reaped 1 expired leases
+2026-11-10 02:26:59,152 worker INFO worker w7.4 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:27:00,759 worker INFO worker w2.3 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:27:00,761 worker INFO reaped 1 expired leases
+2026-11-10 02:27:02,209 worker INFO reaped 1 expired leases
+2026-11-10 02:27:02,840 worker INFO worker w4.3 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:27:03,863 worker INFO reaped 1 expired leases
+2026-11-10 02:27:04,506 worker INFO worker w4.4 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:27:05,715 worker INFO reaped 1 expired leases
+2026-11-10 02:27:06,787 worker INFO worker w1.1 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:07,547 worker INFO reaped 1 expired leases
+2026-11-10 02:27:09,129 worker INFO worker w6.3 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:27:09,358 worker INFO reaped 1 expired leases
+2026-11-10 02:27:11,229 worker INFO worker w0.3 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:27:11,690 worker INFO reaped 1 expired leases
+2026-11-10 02:27:13,494 worker INFO worker w3.3 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:14,040 worker INFO reaped 1 expired leases
+2026-11-10 02:27:15,940 worker INFO worker w2.4 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:27:16,155 worker INFO reaped 1 expired leases
+2026-11-10 02:27:17,652 worker INFO worker w4.5 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:27:18,339 worker INFO reaped 1 expired leases
+2026-11-10 02:27:19,418 worker INFO worker w1.2 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:20,790 worker INFO reaped 1 expired leases
+2026-11-10 02:27:21,717 worker INFO worker w1.3 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:22,707 worker INFO reaped 1 expired leases
+2026-11-10 02:27:24,154 worker INFO worker w3.4 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:24,180 worker INFO reaped 1 expired leases
+2026-11-10 02:27:26,307 worker INFO worker w1.4 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:26,615 worker INFO reaped 1 expired leases
+2026-11-10 02:27:27,948 worker INFO worker w2.5 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:27:29,233 worker INFO reaped 1 expired leases
+2026-11-10 02:27:30,484 worker INFO worker w6.4 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:27:31,241 worker INFO reaped 1 expired leases
+2026-11-10 02:27:32,340 worker INFO worker w7.5 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:27:32,989 worker INFO reaped 1 expired leases
+2026-11-10 02:27:34,380 worker INFO worker w3.5 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:35,315 worker INFO reaped 1 expired leases
+2026-11-10 02:27:36,365 worker INFO worker w5.5 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:27:37,401 worker INFO reaped 1 expired leases
+2026-11-10 02:27:38,159 worker INFO worker w6.5 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:27:39,531 worker INFO reaped 1 expired leases
+2026-11-10 02:27:40,097 worker INFO worker w3.6 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:41,153 worker INFO reaped 1 expired leases
+2026-11-10 02:27:41,720 worker INFO worker w1.5 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:42,967 worker INFO reaped 1 expired leases
+2026-11-10 02:27:44,207 worker INFO worker w1.6 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:44,930 worker INFO reaped 1 expired leases
+2026-11-10 02:27:46,167 worker INFO worker w1.7 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:27:46,350 worker INFO reaped 1 expired leases
+2026-11-10 02:27:48,559 worker INFO worker w3.7 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:50,270 worker INFO worker w4.6 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:27:51,235 worker INFO reaped 1 expired leases
+2026-11-10 02:27:52,738 worker INFO worker w4.7 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:27:53,409 worker INFO reaped 1 expired leases
+2026-11-10 02:27:55,172 worker INFO worker w3.8 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:27:55,174 worker INFO reaped 1 expired leases
+2026-11-10 02:27:57,283 worker INFO worker w0.4 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:27:57,789 worker INFO reaped 1 expired leases
+2026-11-10 02:27:58,796 worker INFO worker w0.5 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:28:00,090 worker INFO reaped 1 expired leases
+2026-11-10 02:28:00,770 worker INFO worker w4.8 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:28:02,283 worker INFO reaped 1 expired leases
+2026-11-10 02:28:03,271 worker INFO worker w4.9 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:28:04,127 worker INFO reaped 1 expired leases
+2026-11-10 02:28:05,327 worker INFO worker w6.6 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:05,780 worker INFO reaped 1 expired leases
+2026-11-10 02:28:07,112 worker INFO worker w1.8 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:28:08,327 worker INFO reaped 1 expired leases
+2026-11-10 02:28:09,284 worker INFO worker w1.9 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:28:10,440 worker INFO reaped 1 expired leases
+2026-11-10 02:28:10,950 worker INFO worker w5.6 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:28:12,029 worker INFO reaped 1 expired leases
+2026-11-10 02:28:12,955 worker INFO worker w7.6 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:28:14,231 worker INFO reaped 1 expired leases
+2026-11-10 02:28:14,680 worker INFO worker w0.6 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:28:15,845 worker INFO reaped 1 expired leases
+2026-11-10 02:28:16,688 worker INFO worker w6.7 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:18,098 worker INFO reaped 1 expired leases
+2026-11-10 02:28:18,357 worker INFO worker w5.7 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:28:19,584 worker INFO reaped 1 expired leases
+2026-11-10 02:28:20,828 worker INFO worker w2.6 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:28:21,608 worker INFO reaped 1 expired leases
+2026-11-10 02:28:23,202 worker INFO worker w6.8 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:23,522 worker INFO reaped 1 expired leases
+2026-11-10 02:28:25,691 worker INFO worker w1.10 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:28:25,693 worker INFO reaped 1 expired leases
+2026-11-10 02:28:27,943 worker INFO reaped 1 expired leases
+2026-11-10 02:28:28,038 worker INFO worker w2.7 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:28:30,065 worker INFO worker w6.9 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:30,662 worker INFO reaped 1 expired leases
+2026-11-10 02:28:31,820 worker INFO worker w5.8 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:28:32,943 worker INFO reaped 1 expired leases
+2026-11-10 02:28:33,428 worker INFO worker w2.8 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:28:35,260 worker INFO reaped 1 expired leases
+2026-11-10 02:28:35,936 worker INFO worker w4.10 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:28:36,725 worker INFO reaped 1 expired leases
+2026-11-10 02:28:37,842 worker INFO worker w1.11 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:28:38,584 worker INFO reaped 1 expired leases
+2026-11-10 02:28:39,683 worker INFO worker w0.7 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:28:40,874 worker INFO reaped 1 expired leases
+2026-11-10 02:28:41,816 worker INFO worker w5.9 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:28:42,828 worker INFO reaped 1 expired leases
+2026-11-10 02:28:44,334 worker INFO worker w0.8 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:28:45,041 worker INFO reaped 1 expired leases
+2026-11-10 02:28:45,891 worker INFO worker w6.10 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:46,974 worker INFO reaped 1 expired leases
+2026-11-10 02:28:47,798 worker INFO worker w5.10 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:28:49,318 worker INFO reaped 1 expired leases
+2026-11-10 02:28:50,131 worker INFO worker w7.7 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:28:50,932 worker INFO reaped 1 expired leases
+2026-11-10 02:28:51,695 worker INFO worker w6.11 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:28:52,665 worker INFO reaped 1 expired leases
+2026-11-10 02:28:54,178 worker INFO worker w2.9 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:28:55,045 worker INFO reaped 1 expired leases
+2026-11-10 02:28:55,955 worker INFO worker w2.10 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:28:56,563 worker INFO reaped 1 expired leases
+2026-11-10 02:28:57,724 worker INFO worker w1.12 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:28:58,943 worker INFO reaped 1 expired leases
+2026-11-10 02:28:59,251 worker INFO worker w0.9 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:29:00,849 worker INFO reaped 1 expired leases
+2026-11-10 02:29:01,608 worker INFO worker w4.11 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:02,465 worker INFO reaped 1 expired leases
+2026-11-10 02:29:03,471 worker INFO worker w7.8 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:29:04,301 worker INFO reaped 1 expired leases
+2026-11-10 02:29:05,433 worker INFO worker w1.13 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:29:06,593 worker INFO reaped 1 expired leases
+2026-11-10 02:29:07,838 worker INFO worker w4.12 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:08,650 worker INFO reaped 1 expired leases
+2026-11-10 02:29:09,580 worker INFO worker w0.10 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:29:10,378 worker INFO reaped 1 expired leases
+2026-11-10 02:29:11,176 worker INFO worker w4.13 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:12,916 worker INFO reaped 1 expired leases
+2026-11-10 02:29:13,534 worker INFO worker w6.12 started faults=none isolation=read_committed effect=db skew=-3.0
+2026-11-10 02:29:14,337 worker INFO reaped 1 expired leases
+2026-11-10 02:29:15,220 worker INFO worker w7.9 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:29:16,092 worker INFO reaped 1 expired leases
+2026-11-10 02:29:17,061 worker INFO worker w4.14 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:18,520 worker INFO reaped 1 expired leases
+2026-11-10 02:29:19,510 worker INFO worker w0.11 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:29:20,000 worker INFO reaped 1 expired leases
+2026-11-10 02:29:21,179 worker INFO worker w0.12 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:29:22,131 worker INFO reaped 1 expired leases
+2026-11-10 02:29:23,620 worker INFO worker w5.11 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:29:24,450 worker INFO reaped 1 expired leases
+2026-11-10 02:29:25,406 worker INFO worker w7.10 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:29:26,429 worker INFO reaped 1 expired leases
+2026-11-10 02:29:27,254 worker INFO worker w2.11 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:29:28,504 worker INFO reaped 1 expired leases
+2026-11-10 02:29:29,101 worker INFO worker w4.15 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:30,296 worker INFO reaped 1 expired leases
+2026-11-10 02:29:30,639 worker INFO worker w4.16 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:29:32,154 worker INFO reaped 1 expired leases
+2026-11-10 02:29:32,729 worker INFO worker w0.13 started faults=none isolation=read_committed effect=db skew=0.0
+2026-11-10 02:29:34,015 worker INFO reaped 1 expired leases
+2026-11-10 02:29:34,821 worker INFO worker w2.12 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:29:35,513 worker INFO reaped 1 expired leases
+2026-11-10 02:29:36,473 worker INFO worker w1.14 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:29:37,539 worker INFO reaped 1 expired leases
+2026-11-10 02:29:38,759 worker INFO worker w1.15 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:29:39,682 worker INFO reaped 1 expired leases
+2026-11-10 02:29:40,463 worker INFO worker w2.13 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:29:41,452 worker INFO reaped 1 expired leases
+2026-11-10 02:29:42,801 worker INFO worker w5.12 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:29:43,446 worker INFO reaped 1 expired leases
+2026-11-10 02:29:44,388 worker INFO worker w3.9 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:29:45,439 worker INFO reaped 1 expired leases
+2026-11-10 02:29:46,244 worker INFO worker w7.11 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:29:47,784 worker INFO reaped 1 expired leases
+2026-11-10 02:29:48,394 worker INFO worker w2.14 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:29:49,184 worker INFO reaped 1 expired leases
+2026-11-10 02:29:50,767 worker INFO worker w5.13 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:29:51,156 worker INFO reaped 1 expired leases
+2026-11-10 02:29:52,398 worker INFO worker w2.15 started faults=none isolation=read_committed effect=db skew=-4.0
+2026-11-10 02:29:53,374 worker INFO reaped 1 expired leases
+2026-11-10 02:29:54,279 worker INFO worker w5.14 started faults=none isolation=read_committed effect=db skew=3.0
+2026-11-10 02:29:55,691 worker INFO reaped 1 expired leases
+2026-11-10 02:29:56,121 worker INFO worker w1.16 started faults=none isolation=read_committed effect=db skew=4.0
+2026-11-10 02:29:57,169 worker INFO reaped 1 expired leases
+2026-11-10 02:29:57,942 worker INFO worker w7.12 started faults=none isolation=read_committed effect=db skew=1.0
+2026-11-10 02:29:59,273 worker INFO reaped 1 expired leases
+2026-11-10 02:29:59,718 worker INFO worker w4.17 started faults=none isolation=read_committed effect=db skew=-2.0
+2026-11-10 02:30:01,032 worker INFO reaped 1 expired leases
+2026-11-10 02:30:01,619 worker INFO worker w3.10 started faults=none isolation=read_committed effect=db skew=2.0
+2026-11-10 02:30:02,746 worker INFO reaped 1 expired leases
+2026-11-10 02:30:02,987 worker INFO worker w4.17 stopped (serialization retries: 0)
+2026-11-10 02:30:02,991 worker INFO worker w6.12 stopped (serialization retries: 0)
+2026-11-10 02:30:03,006 worker INFO worker w2.15 stopped (serialization retries: 0)
+2026-11-10 02:30:03,011 worker INFO worker w0.13 stopped (serialization retries: 0)
+2026-11-10 02:30:03,018 worker INFO worker w1.16 stopped (serialization retries: 0)
+2026-11-10 02:30:03,039 worker INFO worker w3.10 stopped (serialization retries: 0)
+2026-11-10 02:30:03,044 worker INFO worker w5.14 stopped (serialization retries: 0)
+2026-11-10 02:30:03,052 worker INFO worker w7.12 stopped (serialization retries: 0)

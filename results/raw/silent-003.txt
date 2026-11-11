@@ -1,0 +1,11 @@
+== silent-003  20261110T030506Z  code=2bf9578fa64e
+
+-- 2. zombie: worker SIGSTOPped past its lease, job re-run by another worker, then SIGCONT
+[OK      ] (expect-0) fenced, pause=300.0s
+           {"faults": "none", "pause_s": 300.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases", "INFO lost lease job=e8740754-ac60-4ba6-a2b5-50c8668b3432 epoch=1, abandoning"], "violations": 0, "seconds": 302.9}
+[OK      ] (expect-0) fenced, A's heartbeat disabled (fence is the only defence), pause=300.0s
+           {"faults": "none", "pause_s": 300.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 60, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases", "INFO lost lease job=70dd7604-9ced-4ced-a52b-e54c497ee193 epoch=1, abandoning"], "violations": 0, "seconds": 302.8}
+[DETECTED] (control) no_fencing, pause=300.0s
+           {"faults": "no_fencing", "pause_s": 300.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B", "epoch=1 by A"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)", "succeeded(e1,A)"], "worker_log": ["INFO reaped 1 expired leases"], "violations": 1, "seconds": 302.8}
+
+== real bugs found: 0   negative controls missed: 0

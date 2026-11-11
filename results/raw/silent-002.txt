@@ -1,0 +1,17 @@
+== silent-002  20261110T030347Z  code=2bf9578fa64e
+
+-- 2. zombie: worker SIGSTOPped past its lease, job re-run by another worker, then SIGCONT
+[OK      ] (expect-0) fenced, pause=12.0s
+           {"faults": "none", "pause_s": 12.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases", "INFO lost lease job=64794154-a6a2-4e98-b3db-07d31870c4d8 epoch=1, abandoning"], "violations": 0, "seconds": 14.9}
+[OK      ] (expect-0) fenced, pause=4.0s
+           {"faults": "none", "pause_s": 4.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "running", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases", "INFO lost lease job=f2a1506e-8ac1-4551-8623-08d20667339b epoch=1, abandoning"], "violations": 0, "seconds": 9.0}
+[OK      ] (expect-0) fenced, A's heartbeat disabled (fence is the only defence), pause=12.0s
+           {"faults": "none", "pause_s": 12.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 60, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)", "stale_write_rejected(e1,A)"], "worker_log": ["INFO reaped 1 expired leases", "WARNING stale write rejected job=cd769016-4cb8-47dd-8e80-aa3ea9356908 epoch=1 (lease was taken over)"], "violations": 0, "seconds": 14.8}
+[OK      ] (expect-0) fenced, A's heartbeat disabled (fence is the only defence), pause=4.0s
+           {"faults": "none", "pause_s": 4.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 60, "A_claimed_first": true, "state_when_A_resumed": "running", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "stale_write_rejected(e1,A)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases", "WARNING stale write rejected job=c47be309-e911-42ec-9d8b-d273fed7c6b0 epoch=1 (lease was taken over)"], "violations": 0, "seconds": 8.5}
+[DETECTED] (control) no_fencing, pause=12.0s
+           {"faults": "no_fencing", "pause_s": 12.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "succeeded", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=2 by B", "epoch=1 by A"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e2,B)", "succeeded(e1,A)"], "worker_log": ["INFO reaped 1 expired leases"], "violations": 1, "seconds": 14.8}
+[DETECTED] (control) no_fencing, pause=4.0s
+           {"faults": "no_fencing", "pause_s": 4.0, "job_ms": 4000, "lease_ttl_s": 2.0, "A_heartbeat_s": 0.5, "A_claimed_first": true, "state_when_A_resumed": "running", "final_state": "succeeded", "final_epoch": 2, "effects": ["epoch=1 by A", "epoch=2 by B"], "events": ["claim(e1,A)", "requeue(e1,B)", "claim(e2,B)", "succeeded(e1,A)", "succeeded(e2,B)"], "worker_log": ["INFO reaped 1 expired leases"], "violations": 1, "seconds": 6.9}
+
+== real bugs found: 0   negative controls missed: 0

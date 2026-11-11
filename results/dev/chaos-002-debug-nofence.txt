@@ -1,0 +1,39 @@
+== chaos-002-debug-nofence  20261110T020553Z
+code=4a6e42114a24 faults=no_fencing effect_mode=db isolation=read_committed
+jobs=800 workers=8 kill_interval=2.0±0.5s stop_frac=0.5 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.5s submitted=  759 queued=517 running=9 succeeded=212 failed=3 cancelled=18 kills=1 stops=2 workers_active=6
+t=  10.5s submitted=  800 queued=361 running=8 succeeded=385 failed=4 cancelled=42 kills=3 stops=2 workers_active=6
+t=  15.5s submitted=  800 queued=185 running=9 succeeded=557 failed=7 cancelled=42 kills=5 stops=3 workers_active=7
+t=  20.6s submitted=  800 queued=0 running=3 succeeded=742 failed=13 cancelled=42 kills=6 stops=4 workers_active=7
+t=  25.6s submitted=  800 queued=0 running=0 succeeded=745 failed=13 cancelled=42 kills=8 stops=5 workers_active=6
+t=  30.6s submitted=  800 queued=0 running=0 succeeded=745 failed=13 cancelled=42 kills=10 stops=5 workers_active=7
+
+== summary
+wall=33.6s throughput=23.8 jobs/s
+final states: succeeded=745 failed=13 cancelled=42 queued=0 running=0 total=800
+chaos: kill -9=11 SIGSTOP=5 unexpected_worker_exits=0 []
+POST status={201: 799, 200: 214} client_errors(timeouts etc)=3 5xx=0 max_latency=2.96s
+POST kinds sent: {'orig': 803, 'dup_later': 114, 'dup_concurrent': 99}
+cancel status={202: 23, 409: 21, 200: 39} errors=0 max_latency=1.27s kinds={'running': 32, 'early': 43, 'late': 8}
+events: {'cancel_requested': 23, 'cancelled': 2, 'cancelled_queued': 39, 'claim': 768, 'created': 800, 'failed': 13, 'reap_cancelled': 3, 'requeue': 7, 'succeeded': 747}
+executions: claims=768 jobs_claimed=761 re-executions=7 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 39, 1: 754, 2: 7}
+side effects: total=747 jobs_with_effect=745 max_per_job=2
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[FAIL] at most one side effect per job
+       more than one side effect: 2  e.g. ['fd0566cc-64dd-4ba4-adf6-9cbcd2d8ad0d effects=2 state=succeeded', '6d358c62-7d56-4e40-8f38-0c5a942e7c06 effects=2 state=succeeded']
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[FAIL] cancel responses honoured
+       cancel acknowledged (200/202) but job not cancelled: 17  e.g. ['803e3d07-59d0-48cc-a8f9-a0cb5fdfa919 kind=running status=202 final=succeeded', 'b0057a0d-3ffc-4d62-8be5-ac2bf6355dd5 kind=running status=202 final=succeeded', '4a5b97d7-f9f5-4f7e-a049-45fce75772c8 kind=running status=202 final=succeeded']
+[PASS] no double claim, epochs monotonic
+[FAIL] only the lease holder transitions a running job
+       terminal/requeue transition by non-holder: 4  e.g. ['6d358c62-7d56-4e40-8f38-0c5a942e7c06 kind=succeeded epoch=1', '885bed5b-46ff-412d-b2d7-dc4067a0b264 kind=cancelled epoch=1', 'b01b54dd-306c-4a5d-88c5-640c603f8088 kind=cancelled epoch=1']
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: results/dev/chaos-002-debug-nofence.workers.log
+RESULT: FAIL

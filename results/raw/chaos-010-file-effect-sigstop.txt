@@ -1,0 +1,50 @@
+== chaos-010-file-effect-sigstop  20261110T025355Z
+code=2bf9578fa64e faults=none effect_mode=file isolation=read_committed
+jobs=3000 workers=8 kill_interval=2.0±0.5s stop_frac=0.3 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x4 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.2s submitted= 1191 queued=964 running=7 succeeded=174 failed=1 cancelled=45 kills=0 stops=2 workers_active=6
+t=  10.3s submitted= 3000 queued=2559 running=6 succeeded=274 failed=4 cancelled=157 kills=0 stops=5 workers_active=3
+t=  15.3s submitted= 3000 queued=2462 running=6 succeeded=351 failed=6 cancelled=175 kills=0 stops=7 workers_active=4
+t=  20.4s submitted= 3000 queued=2341 running=9 succeeded=465 failed=9 cancelled=176 kills=2 stops=8 workers_active=6
+t=  25.4s submitted= 3000 queued=2171 running=10 succeeded=628 failed=15 cancelled=176 kills=5 stops=8 workers_active=7
+t=  30.4s submitted= 3000 queued=1982 running=9 succeeded=813 failed=20 cancelled=176 kills=6 stops=9 workers_active=7
+t=  35.4s submitted= 3000 queued=1802 running=9 succeeded=991 failed=22 cancelled=176 kills=9 stops=9 workers_active=7
+t=  40.5s submitted= 3000 queued=1628 running=9 succeeded=1161 failed=26 cancelled=176 kills=10 stops=10 workers_active=7
+t=  45.5s submitted= 3000 queued=1451 running=10 succeeded=1332 failed=31 cancelled=176 kills=12 stops=10 workers_active=8
+t=  50.5s submitted= 3000 queued=1277 running=10 succeeded=1505 failed=32 cancelled=176 kills=14 stops=11 workers_active=7
+t=  55.6s submitted= 3000 queued=1116 running=10 succeeded=1663 failed=35 cancelled=176 kills=16 stops=12 workers_active=7
+t=  60.6s submitted= 3000 queued=964 running=8 succeeded=1817 failed=35 cancelled=176 kills=16 stops=14 workers_active=6
+t=  65.7s submitted= 3000 queued=800 running=10 succeeded=1978 failed=36 cancelled=176 kills=19 stops=14 workers_active=7
+t=  70.7s submitted= 3000 queued=601 running=10 succeeded=2175 failed=38 cancelled=176 kills=21 stops=14 workers_active=8
+t=  75.7s submitted= 3000 queued=407 running=11 succeeded=2365 failed=41 cancelled=176 kills=24 stops=14 workers_active=8
+t=  80.8s submitted= 3000 queued=216 running=11 succeeded=2549 failed=48 cancelled=176 kills=27 stops=14 workers_active=8
+t=  85.8s submitted= 3000 queued=25 running=9 succeeded=2736 failed=54 cancelled=176 kills=28 stops=15 workers_active=7
+t=  90.8s submitted= 3000 queued=0 running=1 succeeded=2769 failed=54 cancelled=176 kills=30 stops=15 workers_active=7
+
+== summary
+wall=91.8s throughput=32.7 jobs/s
+final states: succeeded=2770 failed=54 cancelled=176 queued=0 running=0 total=3000
+chaos: kill -9=31 SIGSTOP=15 unexpected_worker_exits=0 []
+POST status={201: 3000, 200: 1851} client_errors(timeouts etc)=3 5xx=0 max_latency=1.70s
+POST kinds sent: {'orig': 3003, 'dup_later': 435, 'dup_concurrent': 1416}
+cancel status={202: 100, 409: 51, 200: 130} errors=0 max_latency=1.30s kinds={'running': 120, 'late': 30, 'early': 131}
+events: {'cancel_requested': 100, 'cancelled': 42, 'cancelled_queued': 128, 'claim': 2910, 'created': 3000, 'failed': 54, 'reap_cancelled': 6, 'requeue': 38, 'stale_write_rejected': 1, 'succeeded': 2770}
+executions: claims=2910 jobs_claimed=2872 re-executions=38 (at-least-once) stale_writes_rejected=1
+attempts histogram: {0: 128, 1: 2834, 2: 38}
+side effects: total=2817 jobs_with_effect=2810 max_per_job=2
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[FAIL] at most one side effect per job
+       more than one side effect: 7  e.g. ['e3e636d9-dec6-4364-98b6-25ea2146c93c effects=2 state=succeeded', '5d36649b-3a9d-41d9-8dd5-c61799bd397f effects=2 state=succeeded', '1ab615b3-f798-42a0-a888-aa0cefc63c03 effects=2 state=succeeded']
+[FAIL] effects consistent with final state
+       side effect on a non-succeeded job: 40  e.g. ['ca282f98-a8f1-491c-b9b1-8c23069f20f8 state=cancelled effects=1', '8e2780ac-3bf0-4c55-9c0e-cefdbe1241a1 state=cancelled effects=1', 'ab557288-9281-4e34-b6bf-e056e46dd7e6 state=cancelled effects=1']
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[PASS] no double claim, epochs monotonic
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: /app/results/raw/chaos-010-file-effect-sigstop.workers.log
+RESULT: FAIL

@@ -1,0 +1,804 @@
+2026-11-10 03:01:47,254 worker INFO worker w0.0 started faults=worker_clock isolation=read_committed effect=db skew=0.0
+2026-11-10 03:01:47,263 worker INFO worker w3.0 started faults=worker_clock isolation=read_committed effect=db skew=2.0
+2026-11-10 03:01:47,269 worker INFO worker w5.0 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:01:47,273 worker INFO worker w2.0 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:01:47,281 worker INFO worker w4.0 started faults=worker_clock isolation=read_committed effect=db skew=-2.0
+2026-11-10 03:01:47,287 worker INFO worker w1.0 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:01:47,295 worker INFO worker w6.0 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:01:47,301 worker INFO worker w7.0 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:01:47,304 worker INFO reaped 1 expired leases
+2026-11-10 03:01:47,542 worker WARNING stale write rejected job=c13b47d2-3c6f-4c1d-a989-d1ff1109b87f epoch=1 (lease was taken over)
+2026-11-10 03:01:48,282 worker INFO reaped 3 expired leases
+2026-11-10 03:01:48,354 worker WARNING stale write rejected job=82b2f91d-e810-4b23-8978-a70071abe7f5 epoch=1 (lease was taken over)
+2026-11-10 03:01:48,463 worker WARNING stale write rejected job=5afed775-85e0-4329-9170-b3b5ca0ed401 epoch=1 (lease was taken over)
+2026-11-10 03:01:48,511 worker INFO reaped 2 expired leases
+2026-11-10 03:01:48,538 worker WARNING stale write rejected job=8fbee010-9b18-4c41-b54b-f6154d9f1f6e epoch=1 (lease was taken over)
+2026-11-10 03:01:48,576 worker WARNING stale write rejected job=acf8241e-2fa4-4c46-a35a-0392536b1370 epoch=1 (lease was taken over)
+2026-11-10 03:01:48,632 worker WARNING stale write rejected job=ec38d23b-ffc8-49ad-85cc-fd05997fb4dd epoch=1 (lease was taken over)
+2026-11-10 03:01:49,382 worker INFO reaped 3 expired leases
+2026-11-10 03:01:49,393 worker WARNING stale write rejected job=a924c245-ac18-4c5a-974a-0bd4b7a29123 epoch=1 (lease was taken over)
+2026-11-10 03:01:49,430 worker INFO worker w6.1 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:01:49,612 worker WARNING stale write rejected job=8ace8331-a820-4ee4-89f3-7779e3788126 epoch=1 (lease was taken over)
+2026-11-10 03:01:49,648 worker INFO reaped 3 expired leases
+2026-11-10 03:01:49,695 worker WARNING stale write rejected job=3b0d3dd5-0756-4d93-92b9-ca056604e1b9 epoch=1 (lease was taken over)
+2026-11-10 03:01:49,874 worker WARNING stale write rejected job=cfd84b0f-fe22-47e0-b72d-4926b2a5ed9f epoch=1 (lease was taken over)
+2026-11-10 03:01:49,922 worker WARNING stale write rejected job=ee335db2-5328-4df9-99db-2378ecf329ce epoch=1 (lease was taken over)
+2026-11-10 03:01:50,505 worker INFO reaped 3 expired leases
+2026-11-10 03:01:50,524 worker WARNING stale write rejected job=d82a3bf2-e81c-404f-8786-4bd3fcbbc16d epoch=1 (lease was taken over)
+2026-11-10 03:01:50,538 worker WARNING stale write rejected job=3ba6f84d-2eb6-45c6-8436-09fac6a195c9 epoch=1 (lease was taken over)
+2026-11-10 03:01:50,548 worker INFO reaped 1 expired leases
+2026-11-10 03:01:50,602 worker WARNING stale write rejected job=d9d33480-6f9f-4acc-8592-a9954cf46af5 epoch=1 (lease was taken over)
+2026-11-10 03:01:50,666 worker WARNING stale write rejected job=d82a3bf2-e81c-404f-8786-4bd3fcbbc16d epoch=2 (lease was taken over)
+2026-11-10 03:01:50,738 worker INFO reaped 3 expired leases
+2026-11-10 03:01:50,823 worker WARNING stale write rejected job=3e26f94d-a908-4382-a371-e6733a4ee958 epoch=1 (lease was taken over)
+2026-11-10 03:01:50,934 worker WARNING stale write rejected job=16e892e6-2ab7-440b-acc3-daf26ebae600 epoch=1 (lease was taken over)
+2026-11-10 03:01:50,956 worker WARNING stale write rejected job=a46d27da-b0e0-4ddb-a941-9c61e4ed0244 epoch=1 (lease was taken over)
+2026-11-10 03:01:51,296 worker INFO worker w1.1 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:01:51,297 worker INFO reaped 3 expired leases
+2026-11-10 03:01:51,303 worker WARNING stale write rejected job=bf1ae1ce-3a98-479c-8d2b-e99d065b7a71 epoch=1 (lease was taken over)
+2026-11-10 03:01:51,379 worker WARNING stale write rejected job=c417f108-5aab-4730-a95d-a2f01c9b6e22 epoch=1 (lease was taken over)
+2026-11-10 03:01:51,536 worker WARNING stale write rejected job=4329156c-6201-4508-8026-f2a7ecd46de8 epoch=1 (lease was taken over)
+2026-11-10 03:01:51,624 worker INFO reaped 2 expired leases
+2026-11-10 03:01:51,644 worker INFO reaped 1 expired leases
+2026-11-10 03:01:51,679 worker WARNING stale write rejected job=370cdb50-c7af-4af0-a251-408a69c275a5 epoch=1 (lease was taken over)
+2026-11-10 03:01:51,824 worker WARNING stale write rejected job=53af36d8-7d09-4953-b774-d4f9646cbfaf epoch=1 (lease was taken over)
+2026-11-10 03:01:51,875 worker WARNING stale write rejected job=ceae6439-573b-45a1-9e9d-0fc2b882c287 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,485 worker INFO reaped 3 expired leases
+2026-11-10 03:01:52,562 worker WARNING stale write rejected job=8e1b5ec5-85a8-4428-8001-b8bae5988281 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,578 worker WARNING stale write rejected job=8d53d907-39a9-4f2e-9ae3-3b65c12aa6fc epoch=1 (lease was taken over)
+2026-11-10 03:01:52,655 worker INFO reaped 1 expired leases
+2026-11-10 03:01:52,686 worker WARNING stale write rejected job=83aaf479-5f32-42df-9650-2a73da802700 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,797 worker INFO reaped 2 expired leases
+2026-11-10 03:01:52,808 worker WARNING stale write rejected job=a72f1643-dedc-46c2-9666-c1c35c307ac1 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,834 worker INFO worker w1.2 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:01:52,836 worker INFO reaped 1 expired leases
+2026-11-10 03:01:52,876 worker WARNING stale write rejected job=e52f068e-f70c-451d-a9e4-f349cdf7dad7 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,930 worker WARNING stale write rejected job=63493d4b-4361-4bad-b4db-c59207e5fef5 epoch=1 (lease was taken over)
+2026-11-10 03:01:52,998 worker WARNING stale write rejected job=e52f068e-f70c-451d-a9e4-f349cdf7dad7 epoch=2 (lease was taken over)
+2026-11-10 03:01:53,749 worker INFO reaped 2 expired leases
+2026-11-10 03:01:53,806 worker WARNING stale write rejected job=dc55af4b-45bf-4118-847a-7f58098a8c9d epoch=1 (lease was taken over)
+2026-11-10 03:01:53,859 worker INFO reaped 2 expired leases
+2026-11-10 03:01:53,917 worker WARNING stale write rejected job=ed2eebb9-0fdc-4f13-a40c-0cd216dc2917 epoch=1 (lease was taken over)
+2026-11-10 03:01:53,991 worker WARNING stale write rejected job=1359c6fe-496e-46d8-95d2-6bef86d84dca epoch=1 (lease was taken over)
+2026-11-10 03:01:54,008 worker WARNING stale write rejected job=27141ca3-180b-48cb-8da8-1113ad309606 epoch=1 (lease was taken over)
+2026-11-10 03:01:54,011 worker INFO reaped 1 expired leases
+2026-11-10 03:01:54,070 worker INFO reaped 2 expired leases
+2026-11-10 03:01:54,097 worker WARNING stale write rejected job=1359c6fe-496e-46d8-95d2-6bef86d84dca epoch=2 (lease was taken over)
+2026-11-10 03:01:54,152 worker WARNING stale write rejected job=e57bf40e-111b-4df0-a914-6eb0bd51db8c epoch=1 (lease was taken over)
+2026-11-10 03:01:54,240 worker WARNING stale write rejected job=c56cbed4-74cb-4669-bb59-ef676bd5224e epoch=1 (lease was taken over)
+2026-11-10 03:01:54,784 worker INFO reaped 2 expired leases
+2026-11-10 03:01:54,847 worker WARNING stale write rejected job=3e1714cc-28ad-4089-94ec-7da75dd1813e epoch=1 (lease was taken over)
+2026-11-10 03:01:54,976 worker INFO reaped 2 expired leases
+2026-11-10 03:01:54,988 worker WARNING stale write rejected job=d2504e6b-b836-4429-ac5c-1cd13ec6930f epoch=1 (lease was taken over)
+2026-11-10 03:01:55,019 worker WARNING stale write rejected job=2c7daff9-c034-464a-9640-92d085249228 epoch=1 (lease was taken over)
+2026-11-10 03:01:55,147 worker WARNING stale write rejected job=cb024a1e-4144-446f-b553-187438f54833 epoch=1 (lease was taken over)
+2026-11-10 03:01:55,181 worker INFO worker w2.1 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:01:55,250 worker INFO reaped 2 expired leases
+2026-11-10 03:01:55,251 worker INFO reaped 2 expired leases
+2026-11-10 03:01:55,354 worker WARNING stale write rejected job=80bbfe00-51cc-4971-b47c-72ba97cd5014 epoch=1 (lease was taken over)
+2026-11-10 03:01:55,380 worker WARNING stale write rejected job=41ca015c-a18c-4d48-9630-4f750c3ca4f8 epoch=1 (lease was taken over)
+2026-11-10 03:01:55,532 worker WARNING stale write rejected job=3aa6509b-6649-4f59-a1bd-d1e1cabd5293 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,040 worker INFO reaped 2 expired leases
+2026-11-10 03:01:56,130 worker WARNING stale write rejected job=94f24b5d-1610-4df0-bea7-174b29b2efc5 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,134 worker WARNING stale write rejected job=2e659c84-3c41-4053-9c64-6da6532be27e epoch=1 (lease was taken over)
+2026-11-10 03:01:56,206 worker INFO reaped 4 expired leases
+2026-11-10 03:01:56,231 worker WARNING stale write rejected job=21b2fa71-d28c-4e00-9d03-d71b53032651 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,245 worker WARNING stale write rejected job=0d3fc913-8263-4b30-9452-c798b3fac552 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,320 worker INFO reaped 2 expired leases
+2026-11-10 03:01:56,325 worker WARNING stale write rejected job=5f592ba4-cd7a-4dd8-99b7-e06b929a3486 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,327 worker WARNING stale write rejected job=6766b20f-b384-475f-9866-0a85da892190 epoch=1 (lease was taken over)
+2026-11-10 03:01:56,439 worker WARNING stale write rejected job=df0a14ab-31f0-46e5-ad88-20d85111deb2 epoch=1 (lease was taken over)
+2026-11-10 03:01:57,176 worker INFO reaped 2 expired leases
+2026-11-10 03:01:57,182 worker INFO worker w5.1 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:01:57,183 worker INFO reaped 1 expired leases
+2026-11-10 03:01:57,248 worker WARNING stale write rejected job=64cfa0e6-25ce-4d39-8e8f-7af67cf3ad46 epoch=1 (lease was taken over)
+2026-11-10 03:01:57,282 worker WARNING stale write rejected job=3d428806-7276-4ba5-836d-362767f345cb epoch=1 (lease was taken over)
+2026-11-10 03:01:57,300 worker INFO reaped 1 expired leases
+2026-11-10 03:01:57,308 worker WARNING stale write rejected job=fcade6ee-9b7f-4ade-a985-cb311f9154e1 epoch=1 (lease was taken over)
+2026-11-10 03:01:57,367 worker WARNING stale write rejected job=f60942fa-fb46-4cd0-9004-d747f31decd5 epoch=1 (lease was taken over)
+2026-11-10 03:01:57,407 worker INFO reaped 3 expired leases
+2026-11-10 03:01:57,418 worker WARNING stale write rejected job=66e89a02-2c11-4c24-a87f-4f3d9b8dc32d epoch=1 (lease was taken over)
+2026-11-10 03:01:57,573 worker WARNING stale write rejected job=1a2a36c4-c5b7-43cb-9e51-579b4c7f26d0 epoch=1 (lease was taken over)
+2026-11-10 03:01:57,602 worker WARNING stale write rejected job=b8043066-bf47-475c-b2ea-b245fe19552a epoch=1 (lease was taken over)
+2026-11-10 03:01:58,192 worker INFO reaped 3 expired leases
+2026-11-10 03:01:58,378 worker WARNING stale write rejected job=a9d91494-6700-49e6-80e9-4d45e584111f epoch=1 (lease was taken over)
+2026-11-10 03:01:58,384 worker WARNING stale write rejected job=a0bbaa7b-5a94-45eb-8e94-166763fcbcae epoch=1 (lease was taken over)
+2026-11-10 03:01:58,403 worker WARNING stale write rejected job=14803332-04fd-47e0-8393-a246386d3183 epoch=1 (lease was taken over)
+2026-11-10 03:01:58,468 worker INFO reaped 4 expired leases
+2026-11-10 03:01:58,486 worker WARNING stale write rejected job=cff30877-caeb-4fda-97d6-4376bb07ec21 epoch=1 (lease was taken over)
+2026-11-10 03:01:58,529 worker WARNING stale write rejected job=5c74fd24-6a09-4692-8ab5-302d1af07876 epoch=1 (lease was taken over)
+2026-11-10 03:01:58,539 worker WARNING stale write rejected job=5cb1cd41-923b-4b56-a7a8-ec28c1c518fa epoch=1 (lease was taken over)
+2026-11-10 03:01:59,300 worker INFO reaped 1 expired leases
+2026-11-10 03:01:59,407 worker INFO reaped 1 expired leases
+2026-11-10 03:01:59,424 worker WARNING stale write rejected job=ce6c8a3e-07bf-4351-bc1c-470f596ffb85 epoch=1 (lease was taken over)
+2026-11-10 03:01:59,479 worker INFO reaped 2 expired leases
+2026-11-10 03:01:59,500 worker WARNING stale write rejected job=1b24987a-f480-455b-86bc-ae25dd334354 epoch=1 (lease was taken over)
+2026-11-10 03:01:59,521 worker WARNING stale write rejected job=ad5ec670-72cf-40d5-a4bd-8a689b7332b1 epoch=1 (lease was taken over)
+2026-11-10 03:01:59,528 worker INFO worker w7.1 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:01:59,530 worker INFO reaped 1 expired leases
+2026-11-10 03:01:59,562 worker INFO reaped 1 expired leases
+2026-11-10 03:01:59,588 worker WARNING stale write rejected job=f7782013-947c-4bbd-bb96-720d871b493c epoch=1 (lease was taken over)
+2026-11-10 03:01:59,596 worker WARNING stale write rejected job=daa1c8f4-a54b-4494-96be-db1b1b264ced epoch=1 (lease was taken over)
+2026-11-10 03:01:59,743 worker WARNING stale write rejected job=c0c58f59-aede-4622-8f90-3098dee7fc80 epoch=1 (lease was taken over)
+2026-11-10 03:02:00,472 worker INFO reaped 1 expired leases
+2026-11-10 03:02:00,582 worker INFO reaped 1 expired leases
+2026-11-10 03:02:00,602 worker INFO reaped 1 expired leases
+2026-11-10 03:02:00,663 worker WARNING stale write rejected job=c5922924-b5f4-4f0e-917c-1fca2d0c8ae7 epoch=1 (lease was taken over)
+2026-11-10 03:02:00,741 worker WARNING stale write rejected job=14acc422-ec2d-4a60-9542-f088ff0822c8 epoch=1 (lease was taken over)
+2026-11-10 03:02:00,753 worker WARNING stale write rejected job=a60fe41c-9838-4f87-9a75-0ce0267e98ae epoch=1 (lease was taken over)
+2026-11-10 03:02:01,482 worker INFO reaped 2 expired leases
+2026-11-10 03:02:01,599 worker WARNING stale write rejected job=d6b11530-a9e4-4eb8-a412-9e1b286212aa epoch=1 (lease was taken over)
+2026-11-10 03:02:01,695 worker INFO worker w3.1 started faults=worker_clock isolation=read_committed effect=db skew=2.0
+2026-11-10 03:02:01,697 worker INFO reaped 1 expired leases
+2026-11-10 03:02:01,723 worker INFO reaped 3 expired leases
+2026-11-10 03:02:01,724 worker WARNING stale write rejected job=4a84daf7-1cff-4e67-a743-551dbf4f21f6 epoch=1 (lease was taken over)
+2026-11-10 03:02:01,780 worker INFO reaped 1 expired leases
+2026-11-10 03:02:01,818 worker WARNING stale write rejected job=b2ead7b0-d77c-49b7-b94e-f7cfb6760bc9 epoch=1 (lease was taken over)
+2026-11-10 03:02:01,926 worker WARNING stale write rejected job=03d94705-b833-4718-9e38-79f2e69f39ef epoch=1 (lease was taken over)
+2026-11-10 03:02:01,991 worker WARNING stale write rejected job=03d94705-b833-4718-9e38-79f2e69f39ef epoch=2 (lease was taken over)
+2026-11-10 03:02:02,824 worker INFO reaped 2 expired leases
+2026-11-10 03:02:02,826 worker INFO reaped 1 expired leases
+2026-11-10 03:02:02,886 worker WARNING stale write rejected job=6e7af0ce-4787-42f8-9ede-3579bf7b7722 epoch=1 (lease was taken over)
+2026-11-10 03:02:02,964 worker INFO reaped 1 expired leases
+2026-11-10 03:02:02,965 worker WARNING stale write rejected job=f5b57e17-4251-4eef-9bfc-400c5aea495c epoch=1 (lease was taken over)
+2026-11-10 03:02:03,083 worker WARNING stale write rejected job=1d26dc21-2439-4c67-94dc-ab0ef3cb43c6 epoch=1 (lease was taken over)
+2026-11-10 03:02:03,112 worker WARNING stale write rejected job=e338c084-8024-4a38-bcb1-0899ae47c76f epoch=1 (lease was taken over)
+2026-11-10 03:02:03,893 worker INFO reaped 2 expired leases
+2026-11-10 03:02:03,907 worker WARNING stale write rejected job=34eac4d8-2794-4217-a719-7673667ba7b1 epoch=1 (lease was taken over)
+2026-11-10 03:02:03,913 worker INFO reaped 2 expired leases
+2026-11-10 03:02:03,978 worker WARNING stale write rejected job=858d128b-6c44-4dba-abff-0e4dc41943b8 epoch=1 (lease was taken over)
+2026-11-10 03:02:04,024 worker WARNING stale write rejected job=7238012c-91bf-49b3-a90c-641354e3ee37 epoch=1 (lease was taken over)
+2026-11-10 03:02:04,035 worker WARNING stale write rejected job=858d128b-6c44-4dba-abff-0e4dc41943b8 epoch=2 (lease was taken over)
+2026-11-10 03:02:04,046 worker INFO reaped 1 expired leases
+2026-11-10 03:02:04,174 worker WARNING stale write rejected job=b76c5d4e-82a8-4325-8282-ddf15406b58d epoch=1 (lease was taken over)
+2026-11-10 03:02:04,208 worker INFO worker w1.3 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:02:04,211 worker INFO reaped 3 expired leases
+2026-11-10 03:02:04,334 worker WARNING stale write rejected job=e89b78ff-f148-40ff-90d1-e91ed5677489 epoch=1 (lease was taken over)
+2026-11-10 03:02:04,367 worker WARNING stale write rejected job=3f26d46c-de8b-4307-953f-981eaff6f70c epoch=1 (lease was taken over)
+2026-11-10 03:02:04,391 worker WARNING stale write rejected job=48574c32-39ed-458a-8bb7-65236d46ed54 epoch=1 (lease was taken over)
+2026-11-10 03:02:04,993 worker INFO reaped 2 expired leases
+2026-11-10 03:02:05,167 worker WARNING stale write rejected job=ad92f7db-1caf-465d-85aa-0122d80a2d37 epoch=1 (lease was taken over)
+2026-11-10 03:02:05,178 worker INFO reaped 2 expired leases
+2026-11-10 03:02:05,245 worker WARNING stale write rejected job=b222d9ae-05fb-4c71-a5e5-762725765876 epoch=1 (lease was taken over)
+2026-11-10 03:02:05,299 worker WARNING stale write rejected job=b222d9ae-05fb-4c71-a5e5-762725765876 epoch=2 (lease was taken over)
+2026-11-10 03:02:05,317 worker INFO reaped 3 expired leases
+2026-11-10 03:02:05,444 worker WARNING stale write rejected job=2f590847-e49a-4206-86ff-0181b71f3bc3 epoch=1 (lease was taken over)
+2026-11-10 03:02:05,464 worker WARNING stale write rejected job=13221c13-6d91-4ca3-9517-77daafe22c61 epoch=1 (lease was taken over)
+2026-11-10 03:02:05,561 worker WARNING stale write rejected job=07cddaca-7cec-4686-b36b-875a1f0d5fbe epoch=1 (lease was taken over)
+2026-11-10 03:02:06,086 worker INFO reaped 2 expired leases
+2026-11-10 03:02:06,218 worker WARNING stale write rejected job=6e9b1bc6-993f-4ab3-a54c-75e559f54243 epoch=1 (lease was taken over)
+2026-11-10 03:02:06,248 worker INFO reaped 2 expired leases
+2026-11-10 03:02:06,251 worker WARNING stale write rejected job=79825ebf-c48e-4250-8041-584e2ada8196 epoch=1 (lease was taken over)
+2026-11-10 03:02:06,306 worker WARNING stale write rejected job=64f76645-9f75-4e82-8925-3a9104e5650a epoch=1 (lease was taken over)
+2026-11-10 03:02:06,496 worker INFO reaped 2 expired leases
+2026-11-10 03:02:06,523 worker WARNING stale write rejected job=f153b40e-bc77-49f3-9b6b-b3a017b4ac31 epoch=1 (lease was taken over)
+2026-11-10 03:02:06,556 worker WARNING stale write rejected job=f153b40e-bc77-49f3-9b6b-b3a017b4ac31 epoch=2 (lease was taken over)
+2026-11-10 03:02:06,559 worker WARNING stale write rejected job=491f9a2a-1f95-435a-97c6-fde837e3ee67 epoch=1 (lease was taken over)
+2026-11-10 03:02:06,692 worker INFO worker w5.2 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:02:06,694 worker INFO reaped 3 expired leases
+2026-11-10 03:02:06,786 worker WARNING stale write rejected job=5ad2b77e-dd84-4d29-8280-9943641af3ba epoch=1 (lease was taken over)
+2026-11-10 03:02:06,792 worker WARNING stale write rejected job=0563cec8-20a4-4d7d-bf1c-f19dc8d57b0d epoch=1 (lease was taken over)
+2026-11-10 03:02:06,858 worker WARNING stale write rejected job=476d71a5-7bca-4590-b9f7-b4e16fde7ebc epoch=1 (lease was taken over)
+2026-11-10 03:02:07,129 worker INFO reaped 2 expired leases
+2026-11-10 03:02:07,181 worker WARNING stale write rejected job=97a82a34-994f-4383-a008-a8aec5a58750 epoch=1 (lease was taken over)
+2026-11-10 03:02:07,299 worker WARNING stale write rejected job=85ec51fd-1a31-455f-b217-1702dbcfdeab epoch=1 (lease was taken over)
+2026-11-10 03:02:07,629 worker INFO reaped 3 expired leases
+2026-11-10 03:02:07,663 worker WARNING stale write rejected job=b798ecc1-5715-42b7-9521-3e1b246bc9d2 epoch=1 (lease was taken over)
+2026-11-10 03:02:07,664 worker WARNING stale write rejected job=0af4124a-78b7-47d3-ba63-e8e51d3ae4bb epoch=1 (lease was taken over)
+2026-11-10 03:02:07,752 worker INFO reaped 2 expired leases
+2026-11-10 03:02:07,791 worker WARNING stale write rejected job=e6954015-dfff-4213-8a1a-2c0ec66a2906 epoch=1 (lease was taken over)
+2026-11-10 03:02:07,837 worker WARNING stale write rejected job=b798ecc1-5715-42b7-9521-3e1b246bc9d2 epoch=2 (lease was taken over)
+2026-11-10 03:02:07,941 worker WARNING stale write rejected job=e6954015-dfff-4213-8a1a-2c0ec66a2906 epoch=2 (lease was taken over)
+2026-11-10 03:02:08,369 worker INFO reaped 1 expired leases
+2026-11-10 03:02:08,416 worker WARNING stale write rejected job=72c8e001-6bfa-4162-b09b-b4bcde16024c epoch=1 (lease was taken over)
+2026-11-10 03:02:08,446 worker INFO worker w7.2 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:02:08,447 worker INFO reaped 1 expired leases
+2026-11-10 03:02:08,656 worker WARNING stale write rejected job=07d85f0e-6a72-465b-a828-1612c9ee157f epoch=1 (lease was taken over)
+2026-11-10 03:02:08,757 worker INFO reaped 3 expired leases
+2026-11-10 03:02:08,815 worker WARNING stale write rejected job=53172fe4-ade7-4eee-9494-38d13c3abe74 epoch=1 (lease was taken over)
+2026-11-10 03:02:08,829 worker WARNING stale write rejected job=83236fff-9dc5-48d5-b057-6e3dec0bf205 epoch=1 (lease was taken over)
+2026-11-10 03:02:08,859 worker INFO reaped 2 expired leases
+2026-11-10 03:02:08,877 worker WARNING stale write rejected job=f479a7d1-2617-4e1e-8ff9-22f8d8cb5138 epoch=1 (lease was taken over)
+2026-11-10 03:02:08,895 worker WARNING stale write rejected job=8d7f8bd1-c9b5-477b-9a60-42b7346062c0 epoch=1 (lease was taken over)
+2026-11-10 03:02:08,990 worker WARNING stale write rejected job=83236fff-9dc5-48d5-b057-6e3dec0bf205 epoch=2 (lease was taken over)
+2026-11-10 03:02:09,486 worker INFO reaped 2 expired leases
+2026-11-10 03:02:09,516 worker WARNING stale write rejected job=6a73c400-ba77-4b0b-8dca-49919b646bf6 epoch=1 (lease was taken over)
+2026-11-10 03:02:09,522 worker WARNING stale write rejected job=3b717e79-5753-4f45-bdc2-c9bb31ede7e8 epoch=1 (lease was taken over)
+2026-11-10 03:02:09,717 worker INFO reaped 1 expired leases
+2026-11-10 03:02:09,817 worker WARNING stale write rejected job=46d08ec8-d85d-4edd-9187-ff5b4558e4b8 epoch=1 (lease was taken over)
+2026-11-10 03:02:09,988 worker INFO reaped 4 expired leases
+2026-11-10 03:02:10,003 worker WARNING stale write rejected job=a97fff74-5f5a-4296-8050-77762502268a epoch=1 (lease was taken over)
+2026-11-10 03:02:10,080 worker INFO reaped 1 expired leases
+2026-11-10 03:02:10,131 worker WARNING stale write rejected job=70dbe7fd-ad52-49a6-8b30-2bc90fcabdc8 epoch=1 (lease was taken over)
+2026-11-10 03:02:10,245 worker WARNING stale write rejected job=7a313664-5488-475d-b9f3-0fe82d63b6db epoch=1 (lease was taken over)
+2026-11-10 03:02:10,285 worker WARNING stale write rejected job=a97fff74-5f5a-4296-8050-77762502268a epoch=2 (lease was taken over)
+2026-11-10 03:02:10,389 worker INFO worker w5.3 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:02:10,392 worker INFO reaped 3 expired leases
+2026-11-10 03:02:10,399 worker WARNING stale write rejected job=8c646d74-1ad6-4989-ba53-52948e2bdc84 epoch=1 (lease was taken over)
+2026-11-10 03:02:10,399 worker WARNING stale write rejected job=36a27fdb-7d2d-4827-8f03-2119b80b583f epoch=1 (lease was taken over)
+2026-11-10 03:02:10,453 worker WARNING stale write rejected job=999d8268-7f40-4212-a4e4-74c5eaaf5aed epoch=1 (lease was taken over)
+2026-11-10 03:02:10,623 worker INFO reaped 2 expired leases
+2026-11-10 03:02:10,761 worker WARNING stale write rejected job=080577a5-2017-485a-9cf1-9f406052a83e epoch=1 (lease was taken over)
+2026-11-10 03:02:10,862 worker WARNING stale write rejected job=efa76e9b-05f0-4091-95ad-90359ca2d8bc epoch=1 (lease was taken over)
+2026-11-10 03:02:10,885 worker INFO reaped 1 expired leases
+2026-11-10 03:02:10,981 worker WARNING stale write rejected job=50c11ca9-86ff-472c-853f-b6f927fd4bba epoch=1 (lease was taken over)
+2026-11-10 03:02:11,301 worker INFO reaped 5 expired leases
+2026-11-10 03:02:11,304 worker WARNING stale write rejected job=0cbeef8d-18aa-4b94-8a1e-47cbf5033342 epoch=1 (lease was taken over)
+2026-11-10 03:02:11,368 worker WARNING stale write rejected job=cd1c03ae-d877-456b-8066-5a71c35a7e35 epoch=1 (lease was taken over)
+2026-11-10 03:02:11,399 worker WARNING stale write rejected job=0683e7f4-6f4d-4dd6-af87-7df9edd71c95 epoch=1 (lease was taken over)
+2026-11-10 03:02:11,569 worker INFO reaped 3 expired leases
+2026-11-10 03:02:11,626 worker WARNING stale write rejected job=4f8b986a-5fae-48f8-b9ed-451e4842c86a epoch=1 (lease was taken over)
+2026-11-10 03:02:11,690 worker WARNING stale write rejected job=bf3a2bfd-ee00-49e9-aca9-593d2215385c epoch=1 (lease was taken over)
+2026-11-10 03:02:11,747 worker WARNING stale write rejected job=7247e44e-a373-4123-9bd8-cc163ac7b18c epoch=1 (lease was taken over)
+2026-11-10 03:02:11,802 worker INFO reaped 2 expired leases
+2026-11-10 03:02:11,820 worker WARNING stale write rejected job=bf3a2bfd-ee00-49e9-aca9-593d2215385c epoch=2 (lease was taken over)
+2026-11-10 03:02:11,950 worker WARNING stale write rejected job=0918301a-bd8a-46a0-a81d-8d5be24d5826 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,018 worker INFO worker w6.2 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:12,090 worker INFO reaped 1 expired leases
+2026-11-10 03:02:12,213 worker WARNING stale write rejected job=caa8c9d9-7310-4287-aa74-748cb7c7d548 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,415 worker INFO reaped 4 expired leases
+2026-11-10 03:02:12,433 worker WARNING stale write rejected job=2cc3ffad-72a1-44c5-82d3-d6afa74c03b9 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,612 worker WARNING stale write rejected job=1708b856-85b5-4219-b704-2fa959718741 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,680 worker INFO reaped 2 expired leases
+2026-11-10 03:02:12,697 worker WARNING stale write rejected job=f506e40b-9ae2-440a-a5ec-25ade337165c epoch=1 (lease was taken over)
+2026-11-10 03:02:12,796 worker WARNING stale write rejected job=6403dabc-2dd8-4bce-a5db-5b687dfa6ad8 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,811 worker WARNING stale write rejected job=a867310d-088e-4cc6-a97e-870b21eaf172 epoch=1 (lease was taken over)
+2026-11-10 03:02:12,882 worker INFO reaped 2 expired leases
+2026-11-10 03:02:12,955 worker WARNING stale write rejected job=6035544d-f004-467f-ad3a-4fe853f3856d epoch=1 (lease was taken over)
+2026-11-10 03:02:13,085 worker WARNING stale write rejected job=b5d9fb23-eee9-4924-9e6c-7dc580d0e27a epoch=1 (lease was taken over)
+2026-11-10 03:02:13,134 worker INFO reaped 1 expired leases
+2026-11-10 03:02:13,379 worker WARNING stale write rejected job=98f85f44-b4db-44dd-9bd2-f9a742607125 epoch=1 (lease was taken over)
+2026-11-10 03:02:13,473 worker INFO reaped 3 expired leases
+2026-11-10 03:02:13,474 worker WARNING stale write rejected job=27aa1ef4-a188-4533-849c-fc06a15ce252 epoch=1 (lease was taken over)
+2026-11-10 03:02:13,528 worker WARNING stale write rejected job=6346dc84-fd9a-4d67-951c-d08708714f10 epoch=1 (lease was taken over)
+2026-11-10 03:02:13,536 worker WARNING stale write rejected job=cac8d15f-3dbb-4882-b6c0-cbe58e57cb82 epoch=1 (lease was taken over)
+2026-11-10 03:02:13,977 worker INFO reaped 3 expired leases
+2026-11-10 03:02:13,979 worker WARNING stale write rejected job=18b8ffd6-1e5c-4ccf-9eba-e36deba57d84 epoch=1 (lease was taken over)
+2026-11-10 03:02:14,015 worker WARNING stale write rejected job=0f1238fe-3e55-4745-b01d-703fcb973856 epoch=1 (lease was taken over)
+2026-11-10 03:02:14,037 worker WARNING stale write rejected job=d0034018-850c-435a-af67-8e94b9a820bb epoch=1 (lease was taken over)
+2026-11-10 03:02:14,040 worker INFO reaped 2 expired leases
+2026-11-10 03:02:14,149 worker WARNING stale write rejected job=d7bbdccf-508a-4371-811b-35635926269e epoch=1 (lease was taken over)
+2026-11-10 03:02:14,241 worker WARNING stale write rejected job=d0034018-850c-435a-af67-8e94b9a820bb epoch=2 (lease was taken over)
+2026-11-10 03:02:14,266 worker INFO worker w1.4 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:02:14,269 worker INFO reaped 4 expired leases
+2026-11-10 03:02:14,282 worker WARNING stale write rejected job=6d5c19e3-4f26-4166-819c-f90e4ce86403 epoch=1 (lease was taken over)
+2026-11-10 03:02:14,364 worker WARNING stale write rejected job=dde52c9b-504a-4fe7-b678-076d66714704 epoch=1 (lease was taken over)
+2026-11-10 03:02:14,491 worker WARNING stale write rejected job=8ac6e3b8-d791-4f9a-adf4-1dc34bcb3577 epoch=1 (lease was taken over)
+2026-11-10 03:02:15,019 worker INFO reaped 3 expired leases
+2026-11-10 03:02:15,116 worker WARNING stale write rejected job=8f216d78-ca90-4505-a539-c49747b22b8b epoch=1 (lease was taken over)
+2026-11-10 03:02:15,149 worker WARNING stale write rejected job=62559b8c-b7e0-443b-8df0-5f8adf2b7dae epoch=1 (lease was taken over)
+2026-11-10 03:02:15,231 worker INFO reaped 1 expired leases
+2026-11-10 03:02:15,238 worker WARNING stale write rejected job=ff604707-ee73-4dab-b3cc-48643c2ef568 epoch=1 (lease was taken over)
+2026-11-10 03:02:15,271 worker INFO reaped 2 expired leases
+2026-11-10 03:02:15,381 worker WARNING stale write rejected job=cb159c4d-7f9b-4fd7-997e-8e4f4cb2801a epoch=1 (lease was taken over)
+2026-11-10 03:02:15,451 worker WARNING stale write rejected job=9486abf5-80bc-4bd3-92f4-f0ce3d6e2dd7 epoch=1 (lease was taken over)
+2026-11-10 03:02:15,540 worker WARNING stale write rejected job=1950c43f-feaf-4c82-a9f4-3941afd2532d epoch=1 (lease was taken over)
+2026-11-10 03:02:15,993 worker INFO worker w2.2 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:02:16,027 worker INFO reaped 4 expired leases
+2026-11-10 03:02:16,091 worker WARNING stale write rejected job=14d8d40b-306f-46c7-a09b-8752bc0820d6 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,123 worker WARNING stale write rejected job=b86af2b1-bb14-4e1b-a1be-96db8a916331 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,216 worker INFO reaped 1 expired leases
+2026-11-10 03:02:16,286 worker WARNING stale write rejected job=d56e17b0-9118-4e9c-9521-2a56a0de39b5 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,286 worker WARNING stale write rejected job=493a0182-8692-47ce-9cd2-ac91728e2867 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,317 worker INFO reaped 1 expired leases
+2026-11-10 03:02:16,460 worker INFO reaped 2 expired leases
+2026-11-10 03:02:16,463 worker WARNING stale write rejected job=bacdbc97-4a1f-404b-9cb5-e462303713b6 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,530 worker WARNING stale write rejected job=fe91ded5-7d5c-4448-87a5-965868a62e03 epoch=1 (lease was taken over)
+2026-11-10 03:02:16,556 worker WARNING stale write rejected job=0120b59e-58dd-4e11-978b-ae8cfab838a1 epoch=1 (lease was taken over)
+2026-11-10 03:02:17,051 worker INFO reaped 3 expired leases
+2026-11-10 03:02:17,081 worker WARNING stale write rejected job=d88058d6-cb76-49e3-88f7-fe9f4a736d71 epoch=1 (lease was taken over)
+2026-11-10 03:02:17,138 worker WARNING stale write rejected job=0b94cbe5-8173-4db3-ad04-06a47a7ff2ca epoch=1 (lease was taken over)
+2026-11-10 03:02:17,224 worker WARNING stale write rejected job=6d72140f-c5ba-477a-97b8-90fe093115ee epoch=1 (lease was taken over)
+2026-11-10 03:02:17,409 worker INFO reaped 1 expired leases
+2026-11-10 03:02:17,450 worker INFO reaped 1 expired leases
+2026-11-10 03:02:17,488 worker INFO worker w6.3 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:17,554 worker INFO reaped 2 expired leases
+2026-11-10 03:02:17,604 worker WARNING stale write rejected job=6c4d0db1-75ce-4b51-9f45-eea6a43ea0a9 epoch=1 (lease was taken over)
+2026-11-10 03:02:17,610 worker WARNING stale write rejected job=31a30d10-17ae-4eef-a153-04bfe09e622b epoch=1 (lease was taken over)
+2026-11-10 03:02:17,700 worker WARNING stale write rejected job=c0618023-0b7a-494a-bb90-ebb1cfe1a43d epoch=1 (lease was taken over)
+2026-11-10 03:02:18,189 worker INFO reaped 3 expired leases
+2026-11-10 03:02:18,226 worker WARNING stale write rejected job=cd32e3c0-bf10-413d-a646-476229c4c380 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,230 worker WARNING stale write rejected job=f73fb921-331e-4901-a129-49bbbc4845a2 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,271 worker WARNING stale write rejected job=72d3754d-8881-40b7-95ad-1c53d8c6faa1 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,433 worker INFO reaped 1 expired leases
+2026-11-10 03:02:18,497 worker WARNING stale write rejected job=f6e4ac1c-0af1-4017-ac14-6ee573bbe689 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,543 worker INFO reaped 2 expired leases
+2026-11-10 03:02:18,616 worker WARNING stale write rejected job=7d5b1b24-f93e-4079-a37c-8dafeaf0b5a7 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,635 worker INFO reaped 2 expired leases
+2026-11-10 03:02:18,668 worker WARNING stale write rejected job=b16fccf8-ee85-47ce-a9b6-3e446f7a512a epoch=1 (lease was taken over)
+2026-11-10 03:02:18,679 worker WARNING stale write rejected job=3cab21e4-dcc0-4438-badd-5a832621af41 epoch=1 (lease was taken over)
+2026-11-10 03:02:18,787 worker WARNING stale write rejected job=b16fccf8-ee85-47ce-a9b6-3e446f7a512a epoch=2 (lease was taken over)
+2026-11-10 03:02:19,264 worker INFO reaped 3 expired leases
+2026-11-10 03:02:19,309 worker WARNING stale write rejected job=36856ba7-41fb-4e09-b835-47eeda639351 epoch=1 (lease was taken over)
+2026-11-10 03:02:19,369 worker INFO worker w2.3 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:02:19,390 worker WARNING stale write rejected job=b5f3f094-8beb-4589-b7f7-47186d755191 epoch=1 (lease was taken over)
+2026-11-10 03:02:19,476 worker INFO reaped 1 expired leases
+2026-11-10 03:02:19,581 worker INFO reaped 1 expired leases
+2026-11-10 03:02:19,622 worker WARNING stale write rejected job=683e04e3-346e-4941-8755-28d62e62407d epoch=1 (lease was taken over)
+2026-11-10 03:02:19,710 worker WARNING stale write rejected job=c30d1416-e0e6-46ac-ae76-26e50e1d2812 epoch=1 (lease was taken over)
+2026-11-10 03:02:19,874 worker INFO reaped 4 expired leases
+2026-11-10 03:02:19,898 worker WARNING stale write rejected job=8caf7e85-7b5e-45df-a76a-093998a0713f epoch=1 (lease was taken over)
+2026-11-10 03:02:19,911 worker WARNING stale write rejected job=323b6f72-b430-4e1e-a4e2-4886ac6ecee6 epoch=1 (lease was taken over)
+2026-11-10 03:02:20,060 worker WARNING stale write rejected job=3093b003-09dd-4651-8c00-5726a5a9a68d epoch=1 (lease was taken over)
+2026-11-10 03:02:20,285 worker INFO reaped 3 expired leases
+2026-11-10 03:02:20,331 worker WARNING stale write rejected job=0e4f4067-9ab3-47fb-af3c-0673288eab07 epoch=1 (lease was taken over)
+2026-11-10 03:02:20,333 worker WARNING stale write rejected job=3dee416a-c1bb-431d-9c4f-e4d0b99916fc epoch=1 (lease was taken over)
+2026-11-10 03:02:20,518 worker WARNING stale write rejected job=05b62b70-90d6-4421-ba2d-da9f05cae76d epoch=1 (lease was taken over)
+2026-11-10 03:02:20,654 worker INFO reaped 1 expired leases
+2026-11-10 03:02:20,731 worker WARNING stale write rejected job=750d2234-fad7-44b9-8c8c-d148ed3ed51e epoch=1 (lease was taken over)
+2026-11-10 03:02:20,762 worker INFO reaped 2 expired leases
+2026-11-10 03:02:20,808 worker WARNING stale write rejected job=e89824b2-984d-44e2-af0d-50e5e9488cd5 epoch=1 (lease was taken over)
+2026-11-10 03:02:20,890 worker INFO reaped 1 expired leases
+2026-11-10 03:02:20,987 worker WARNING stale write rejected job=5376f45d-180e-4b79-9e74-8c605eb581ab epoch=1 (lease was taken over)
+2026-11-10 03:02:21,089 worker WARNING stale write rejected job=24cc389b-91c9-4600-8045-3e20ae60d4c8 epoch=1 (lease was taken over)
+2026-11-10 03:02:21,354 worker INFO reaped 3 expired leases
+2026-11-10 03:02:21,359 worker WARNING stale write rejected job=217f301b-9679-46d8-bf9c-a67daca1c1cc epoch=1 (lease was taken over)
+2026-11-10 03:02:21,403 worker WARNING stale write rejected job=f2871492-27e2-4c6c-9518-5623bea6ac43 epoch=1 (lease was taken over)
+2026-11-10 03:02:21,423 worker WARNING stale write rejected job=659863f2-3594-4ab5-8932-ca593e63df84 epoch=1 (lease was taken over)
+2026-11-10 03:02:21,483 worker INFO worker w4.1 started faults=worker_clock isolation=read_committed effect=db skew=-2.0
+2026-11-10 03:02:21,840 worker INFO reaped 2 expired leases
+2026-11-10 03:02:21,869 worker WARNING stale write rejected job=6351d7eb-ce9b-43f3-8014-695288573488 epoch=1 (lease was taken over)
+2026-11-10 03:02:21,907 worker INFO reaped 3 expired leases
+2026-11-10 03:02:21,935 worker WARNING stale write rejected job=77e2f489-9d6c-43fe-86c7-09e4f30f9039 epoch=1 (lease was taken over)
+2026-11-10 03:02:22,007 worker WARNING stale write rejected job=d0e4a97f-a9be-4d5f-81e8-92e900a0cb6c epoch=1 (lease was taken over)
+2026-11-10 03:02:22,102 worker WARNING stale write rejected job=e5d4a9f8-eaba-438a-83fc-c7c621b1a442 epoch=1 (lease was taken over)
+2026-11-10 03:02:22,362 worker INFO reaped 3 expired leases
+2026-11-10 03:02:22,367 worker WARNING stale write rejected job=55ddbd04-a003-4b74-8ee1-82a3f7d349ea epoch=1 (lease was taken over)
+2026-11-10 03:02:22,370 worker WARNING stale write rejected job=3a93ef8f-2845-499d-b6fd-3799ca4c8f18 epoch=1 (lease was taken over)
+2026-11-10 03:02:22,445 worker WARNING stale write rejected job=0b64046d-47c0-4bfd-a8fe-afdfa7593185 epoch=1 (lease was taken over)
+2026-11-10 03:02:22,867 worker INFO reaped 2 expired leases
+2026-11-10 03:02:23,021 worker INFO worker w2.4 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:02:23,051 worker WARNING stale write rejected job=1c8c0134-e973-4892-bcac-dc588dacf4bc epoch=1 (lease was taken over)
+2026-11-10 03:02:23,095 worker INFO reaped 3 expired leases
+2026-11-10 03:02:23,290 worker WARNING stale write rejected job=b8492c8d-f4e5-41f8-902b-8341c7a27d7c epoch=1 (lease was taken over)
+2026-11-10 03:02:23,298 worker WARNING stale write rejected job=d8fb154e-4949-4104-a73c-e615e1cb3011 epoch=1 (lease was taken over)
+2026-11-10 03:02:23,308 worker WARNING stale write rejected job=6a7957bf-4d48-4f9a-a1ac-690c13a894c5 epoch=1 (lease was taken over)
+2026-11-10 03:02:23,465 worker INFO reaped 2 expired leases
+2026-11-10 03:02:23,466 worker WARNING stale write rejected job=aab0ab51-3720-46c5-8f4d-f3090dd1fe51 epoch=1 (lease was taken over)
+2026-11-10 03:02:23,565 worker WARNING stale write rejected job=7864ebb3-85fa-4205-bede-f1751bbe0fe0 epoch=1 (lease was taken over)
+2026-11-10 03:02:23,965 worker INFO reaped 2 expired leases
+2026-11-10 03:02:24,094 worker WARNING stale write rejected job=e120f726-cc3e-48eb-9121-e45e11baa703 epoch=1 (lease was taken over)
+2026-11-10 03:02:24,188 worker WARNING stale write rejected job=29d33084-e1b1-4bde-a949-40b5704e338a epoch=1 (lease was taken over)
+2026-11-10 03:02:24,237 worker INFO reaped 3 expired leases
+2026-11-10 03:02:24,275 worker WARNING stale write rejected job=62400860-7f24-443d-b337-c0c811f524d4 epoch=1 (lease was taken over)
+2026-11-10 03:02:24,280 worker WARNING stale write rejected job=2b342d78-a11c-46fd-89ef-4f7e6e1d866e epoch=1 (lease was taken over)
+2026-11-10 03:02:24,347 worker WARNING stale write rejected job=d68afb17-fd65-4510-84fe-c898f1e3d661 epoch=1 (lease was taken over)
+2026-11-10 03:02:24,568 worker INFO worker w6.4 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:24,586 worker INFO reaped 4 expired leases
+2026-11-10 03:02:24,613 worker WARNING stale write rejected job=d5e429d8-8007-4580-9d0b-35e88afe5217 epoch=1 (lease was taken over)
+2026-11-10 03:02:24,697 worker WARNING stale write rejected job=fb2bbb2c-25e6-40b3-8a62-682744dfa460 epoch=1 (lease was taken over)
+2026-11-10 03:02:24,744 worker WARNING stale write rejected job=e77a2e51-c2cf-4314-9cf4-eb719c9b21de epoch=1 (lease was taken over)
+2026-11-10 03:02:25,101 worker INFO reaped 1 expired leases
+2026-11-10 03:02:25,110 worker INFO reaped 1 expired leases
+2026-11-10 03:02:25,143 worker WARNING stale write rejected job=6d9b1cbb-0ded-4c58-aeb0-b31631670766 epoch=1 (lease was taken over)
+2026-11-10 03:02:25,172 worker WARNING stale write rejected job=feaa9d44-8629-431d-9766-13f814c63da1 epoch=1 (lease was taken over)
+2026-11-10 03:02:25,385 worker INFO reaped 3 expired leases
+2026-11-10 03:02:25,404 worker WARNING stale write rejected job=67778a38-d011-42bf-959e-33364722c7ad epoch=1 (lease was taken over)
+2026-11-10 03:02:25,498 worker WARNING stale write rejected job=dffd53c9-10ea-44ab-b81b-cd99d5b51934 epoch=1 (lease was taken over)
+2026-11-10 03:02:25,574 worker WARNING stale write rejected job=157aa0dd-47d3-479e-b70c-cdb1d3cb7fb8 epoch=1 (lease was taken over)
+2026-11-10 03:02:25,635 worker INFO reaped 3 expired leases
+2026-11-10 03:02:25,653 worker WARNING stale write rejected job=eca70c2a-493c-40d3-988e-e674f364f7c1 epoch=1 (lease was taken over)
+2026-11-10 03:02:25,666 worker WARNING stale write rejected job=157aa0dd-47d3-479e-b70c-cdb1d3cb7fb8 epoch=2 (lease was taken over)
+2026-11-10 03:02:25,726 worker WARNING stale write rejected job=4eceda47-c411-4d06-b436-e0e4733061c0 epoch=1 (lease was taken over)
+2026-11-10 03:02:26,117 worker INFO reaped 2 expired leases
+2026-11-10 03:02:26,229 worker WARNING stale write rejected job=2008ad74-1468-4ff1-8ad4-82d4ab3fd0f7 epoch=1 (lease was taken over)
+2026-11-10 03:02:26,278 worker WARNING stale write rejected job=10fc8d05-aa45-4050-ac63-518ebb6b7adb epoch=1 (lease was taken over)
+2026-11-10 03:02:26,349 worker INFO worker w6.5 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:26,389 worker INFO reaped 4 expired leases
+2026-11-10 03:02:26,397 worker WARNING stale write rejected job=d7140b9b-d799-4a7a-8ba1-19c5057eb916 epoch=1 (lease was taken over)
+2026-11-10 03:02:26,419 worker WARNING stale write rejected job=1b927a2e-e4f2-4d9f-be9c-c66ff282e37a epoch=1 (lease was taken over)
+2026-11-10 03:02:26,457 worker WARNING stale write rejected job=1331666a-be05-463e-914f-9c0a9ba03f76 epoch=1 (lease was taken over)
+2026-11-10 03:02:26,727 worker INFO reaped 3 expired leases
+2026-11-10 03:02:26,767 worker WARNING stale write rejected job=06f12bdf-5103-4635-9372-8283798b9992 epoch=1 (lease was taken over)
+2026-11-10 03:02:26,808 worker WARNING stale write rejected job=74cd8227-b232-41e2-a324-e7bf4598c42a epoch=1 (lease was taken over)
+2026-11-10 03:02:26,866 worker WARNING stale write rejected job=bccec589-2b94-43f4-b498-63e1eb7abb11 epoch=1 (lease was taken over)
+2026-11-10 03:02:27,119 worker INFO reaped 2 expired leases
+2026-11-10 03:02:27,224 worker WARNING stale write rejected job=396ce7a3-2443-4016-a2d8-99e71e44a9ea epoch=1 (lease was taken over)
+2026-11-10 03:02:27,327 worker WARNING stale write rejected job=4a8e1210-d111-427e-809b-594c20422933 epoch=1 (lease was taken over)
+2026-11-10 03:02:27,341 worker INFO reaped 1 expired leases
+2026-11-10 03:02:27,426 worker INFO reaped 2 expired leases
+2026-11-10 03:02:27,502 worker WARNING stale write rejected job=60463d4c-f588-42c8-97ef-2082b1767154 epoch=1 (lease was taken over)
+2026-11-10 03:02:27,513 worker WARNING stale write rejected job=984ac7eb-3d41-43d7-b37e-aad66f9bc824 epoch=1 (lease was taken over)
+2026-11-10 03:02:27,612 worker WARNING stale write rejected job=eb54efe7-491d-4ad0-b935-0868fed941e3 epoch=1 (lease was taken over)
+2026-11-10 03:02:27,881 worker INFO reaped 3 expired leases
+2026-11-10 03:02:27,919 worker WARNING stale write rejected job=399ebd15-772e-4d58-ac37-8045cd111f0e epoch=1 (lease was taken over)
+2026-11-10 03:02:28,025 worker WARNING stale write rejected job=102dd031-bf82-4b1d-95d6-516e21569ce9 epoch=1 (lease was taken over)
+2026-11-10 03:02:28,098 worker WARNING stale write rejected job=00dd7bd3-192f-480f-80f5-2f34747f891c epoch=1 (lease was taken over)
+2026-11-10 03:02:28,320 worker INFO reaped 2 expired leases
+2026-11-10 03:02:28,364 worker WARNING stale write rejected job=0bce37e4-5846-4cda-8d8e-09ce4e4767dc epoch=1 (lease was taken over)
+2026-11-10 03:02:28,430 worker WARNING stale write rejected job=29421ea6-583f-4335-85f4-5e85d802b8a0 epoch=1 (lease was taken over)
+2026-11-10 03:02:28,489 worker INFO reaped 1 expired leases
+2026-11-10 03:02:28,502 worker INFO reaped 2 expired leases
+2026-11-10 03:02:28,517 worker WARNING stale write rejected job=669e7a6d-56c2-4483-a9dc-302662d1261b epoch=1 (lease was taken over)
+2026-11-10 03:02:28,642 worker WARNING stale write rejected job=c110253c-babb-4432-887a-e38bd5da7af6 epoch=1 (lease was taken over)
+2026-11-10 03:02:28,652 worker INFO worker w4.2 started faults=worker_clock isolation=read_committed effect=db skew=-2.0
+2026-11-10 03:02:28,891 worker INFO reaped 3 expired leases
+2026-11-10 03:02:28,953 worker WARNING stale write rejected job=767c63cc-0166-4c4f-9297-5bf0cbcf0ba3 epoch=1 (lease was taken over)
+2026-11-10 03:02:29,098 worker WARNING stale write rejected job=bf0d6415-332e-4784-8a42-219a53145064 epoch=1 (lease was taken over)
+2026-11-10 03:02:29,130 worker WARNING stale write rejected job=7f07f475-4788-4dfb-a1f3-6387b58306ab epoch=1 (lease was taken over)
+2026-11-10 03:02:29,433 worker INFO reaped 2 expired leases
+2026-11-10 03:02:29,448 worker WARNING stale write rejected job=1368efe5-a642-414d-b983-e2b31b99d16d epoch=1 (lease was taken over)
+2026-11-10 03:02:29,597 worker WARNING stale write rejected job=5d0ed99f-259d-4fa5-acd9-a3934b9c26f0 epoch=1 (lease was taken over)
+2026-11-10 03:02:29,722 worker INFO reaped 3 expired leases
+2026-11-10 03:02:29,837 worker WARNING stale write rejected job=7e011d81-1444-41dc-a4d5-064ab872cf7e epoch=1 (lease was taken over)
+2026-11-10 03:02:29,880 worker WARNING stale write rejected job=d04d08a9-8cb3-47f0-bbe4-4f53ded9d1c1 epoch=1 (lease was taken over)
+2026-11-10 03:02:29,891 worker WARNING stale write rejected job=a14ea64f-3485-4ef6-adf5-134a9ab4c3ee epoch=1 (lease was taken over)
+2026-11-10 03:02:29,950 worker INFO reaped 3 expired leases
+2026-11-10 03:02:29,994 worker WARNING stale write rejected job=4ea3ce92-f030-4462-9608-08314814dfe2 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,018 worker WARNING stale write rejected job=6c371c33-af31-4388-8c40-f3e7b42bd059 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,069 worker WARNING stale write rejected job=76408307-b420-426a-963c-d878b647e45b epoch=1 (lease was taken over)
+2026-11-10 03:02:30,274 worker INFO worker w3.2 started faults=worker_clock isolation=read_committed effect=db skew=2.0
+2026-11-10 03:02:30,276 worker INFO reaped 2 expired leases
+2026-11-10 03:02:30,320 worker WARNING stale write rejected job=f2b0a546-a949-4367-9abd-bbd509135ed5 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,454 worker WARNING stale write rejected job=9b415fd7-5f54-4cb5-a918-c91977f0c5f0 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,772 worker INFO reaped 3 expired leases
+2026-11-10 03:02:30,814 worker WARNING stale write rejected job=373a7e47-9e3a-4e7c-b1e9-1f42cd7e911d epoch=1 (lease was taken over)
+2026-11-10 03:02:30,829 worker WARNING stale write rejected job=65f3c858-8408-4f2f-a1cd-0eca2be517c0 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,836 worker WARNING stale write rejected job=98cd35ce-8023-4421-9c7c-23f696530a59 epoch=1 (lease was taken over)
+2026-11-10 03:02:30,949 worker INFO reaped 1 expired leases
+2026-11-10 03:02:31,031 worker WARNING stale write rejected job=f5c83c8e-0801-4fa1-ae80-37e28a4f7096 epoch=1 (lease was taken over)
+2026-11-10 03:02:31,043 worker INFO reaped 3 expired leases
+2026-11-10 03:02:31,080 worker WARNING stale write rejected job=7a5536e9-2356-4caa-997a-edb3bd52bde6 epoch=1 (lease was taken over)
+2026-11-10 03:02:31,165 worker WARNING stale write rejected job=fb0fd14d-0461-4fc3-8253-5c08bd00297c epoch=1 (lease was taken over)
+2026-11-10 03:02:31,201 worker WARNING stale write rejected job=a50337eb-348f-4af5-aab5-b26cc360503f epoch=1 (lease was taken over)
+2026-11-10 03:02:31,447 worker INFO reaped 2 expired leases
+2026-11-10 03:02:31,536 worker WARNING stale write rejected job=0ae7968d-30a5-4edc-9553-44286689f1bf epoch=1 (lease was taken over)
+2026-11-10 03:02:31,691 worker WARNING stale write rejected job=dbac2d84-e149-42a0-99e1-b0e2b81587b7 epoch=1 (lease was taken over)
+2026-11-10 03:02:31,965 worker INFO reaped 3 expired leases
+2026-11-10 03:02:32,004 worker WARNING stale write rejected job=ba264d3a-a5c4-41cb-bc37-8861778df166 epoch=1 (lease was taken over)
+2026-11-10 03:02:32,026 worker WARNING stale write rejected job=454a89f8-1655-48d6-b6a6-d37cad723abd epoch=1 (lease was taken over)
+2026-11-10 03:02:32,086 worker WARNING stale write rejected job=628a2195-5bcc-46e0-bb60-30367aaf495d epoch=1 (lease was taken over)
+2026-11-10 03:02:32,090 worker INFO reaped 3 expired leases
+2026-11-10 03:02:32,122 worker WARNING stale write rejected job=ba264d3a-a5c4-41cb-bc37-8861778df166 epoch=2 (lease was taken over)
+2026-11-10 03:02:32,155 worker WARNING stale write rejected job=07c327a4-859a-49ec-ac69-7b2933eee9b2 epoch=1 (lease was taken over)
+2026-11-10 03:02:32,247 worker WARNING stale write rejected job=628a2195-5bcc-46e0-bb60-30367aaf495d epoch=2 (lease was taken over)
+2026-11-10 03:02:32,458 worker INFO worker w0.1 started faults=worker_clock isolation=read_committed effect=db skew=0.0
+2026-11-10 03:02:32,700 worker INFO reaped 2 expired leases
+2026-11-10 03:02:32,816 worker WARNING stale write rejected job=58c9db35-10b7-49ce-9286-6aa89b803b50 epoch=1 (lease was taken over)
+2026-11-10 03:02:32,830 worker WARNING stale write rejected job=835a0c29-4ae0-4d0b-a376-ae70534f6c90 epoch=1 (lease was taken over)
+2026-11-10 03:02:33,074 worker INFO reaped 3 expired leases
+2026-11-10 03:02:33,113 worker WARNING stale write rejected job=18a276f7-e18e-4b08-a123-09ee1f10d4f1 epoch=1 (lease was taken over)
+2026-11-10 03:02:33,125 worker INFO reaped 1 expired leases
+2026-11-10 03:02:33,129 worker WARNING stale write rejected job=c8175190-d8a5-4360-8776-2160e526ed4f epoch=1 (lease was taken over)
+2026-11-10 03:02:33,138 worker WARNING stale write rejected job=dab48f45-792f-4285-a6d2-b02d250d5cef epoch=1 (lease was taken over)
+2026-11-10 03:02:33,226 worker INFO reaped 1 expired leases
+2026-11-10 03:02:33,272 worker WARNING stale write rejected job=dab48f45-792f-4285-a6d2-b02d250d5cef epoch=2 (lease was taken over)
+2026-11-10 03:02:33,376 worker WARNING stale write rejected job=ff9d9b1f-e47c-45c8-999e-2a00d5480e34 epoch=1 (lease was taken over)
+2026-11-10 03:02:33,982 worker INFO reaped 2 expired leases
+2026-11-10 03:02:34,072 worker WARNING stale write rejected job=2f57c943-1767-43b9-afe4-649533210f61 epoch=1 (lease was taken over)
+2026-11-10 03:02:34,124 worker WARNING stale write rejected job=9eda1c50-be8d-4dd1-a8f7-22248834976b epoch=1 (lease was taken over)
+2026-11-10 03:02:34,180 worker INFO worker w2.5 started faults=worker_clock isolation=read_committed effect=db skew=-4.0
+2026-11-10 03:02:34,249 worker INFO reaped 1 expired leases
+2026-11-10 03:02:34,249 worker INFO reaped 5 expired leases
+2026-11-10 03:02:34,298 worker WARNING stale write rejected job=9eda1c50-be8d-4dd1-a8f7-22248834976b epoch=2 (lease was taken over)
+2026-11-10 03:02:34,374 worker WARNING stale write rejected job=66e803ea-1d57-48ee-8662-6208fab2f248 epoch=1 (lease was taken over)
+2026-11-10 03:02:34,536 worker WARNING stale write rejected job=28d5fe81-8a37-4e39-992b-3470cfabbb00 epoch=1 (lease was taken over)
+2026-11-10 03:02:35,078 worker INFO reaped 2 expired leases
+2026-11-10 03:02:35,124 worker WARNING stale write rejected job=1de0471d-4fdd-44f6-999e-581545000f41 epoch=1 (lease was taken over)
+2026-11-10 03:02:35,193 worker WARNING stale write rejected job=d275e2b8-369a-4c38-82a9-23044331b3a3 epoch=1 (lease was taken over)
+2026-11-10 03:02:35,399 worker INFO reaped 3 expired leases
+2026-11-10 03:02:35,462 worker WARNING stale write rejected job=873e4e64-7da0-4bfd-835b-04a0df5cc7f0 epoch=1 (lease was taken over)
+2026-11-10 03:02:35,476 worker WARNING stale write rejected job=c67df693-e376-4384-b59d-02282ec910db epoch=1 (lease was taken over)
+2026-11-10 03:02:35,504 worker INFO reaped 2 expired leases
+2026-11-10 03:02:35,573 worker WARNING stale write rejected job=c67df693-e376-4384-b59d-02282ec910db epoch=2 (lease was taken over)
+2026-11-10 03:02:35,575 worker WARNING stale write rejected job=a8dec727-3932-41f0-bb7b-5fd41238c148 epoch=1 (lease was taken over)
+2026-11-10 03:02:35,654 worker WARNING stale write rejected job=c8f9c7b1-45a5-4a96-9fc5-26966f9abb4a epoch=1 (lease was taken over)
+2026-11-10 03:02:35,929 worker INFO worker w7.3 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:02:35,930 worker INFO reaped 1 expired leases
+2026-11-10 03:02:36,023 worker WARNING stale write rejected job=4b2866c5-69f4-40b3-8b52-37d9c4d7e325 epoch=1 (lease was taken over)
+2026-11-10 03:02:36,153 worker INFO reaped 2 expired leases
+2026-11-10 03:02:36,205 worker WARNING stale write rejected job=f74dd1ad-727f-4851-8ab0-0de708024aeb epoch=1 (lease was taken over)
+2026-11-10 03:02:36,264 worker WARNING stale write rejected job=373f3b5b-137f-4aa2-bab4-e37e3f06135d epoch=1 (lease was taken over)
+2026-11-10 03:02:36,472 worker INFO reaped 3 expired leases
+2026-11-10 03:02:36,533 worker WARNING stale write rejected job=21d058e5-d745-4b8d-9a92-c9ac4910135b epoch=1 (lease was taken over)
+2026-11-10 03:02:36,538 worker WARNING stale write rejected job=cb6eb9e0-b99e-44b8-9f4d-5fbd6c681ee0 epoch=1 (lease was taken over)
+2026-11-10 03:02:36,620 worker INFO reaped 2 expired leases
+2026-11-10 03:02:36,628 worker WARNING stale write rejected job=8604615b-f95e-4f62-b6ee-ee4a1df26a8a epoch=1 (lease was taken over)
+2026-11-10 03:02:36,730 worker WARNING stale write rejected job=3194c47c-cddd-4fbd-827c-55be987bf8e7 epoch=1 (lease was taken over)
+2026-11-10 03:02:36,818 worker WARNING stale write rejected job=8604615b-f95e-4f62-b6ee-ee4a1df26a8a epoch=2 (lease was taken over)
+2026-11-10 03:02:37,084 worker INFO reaped 1 expired leases
+2026-11-10 03:02:37,174 worker INFO reaped 1 expired leases
+2026-11-10 03:02:37,243 worker WARNING stale write rejected job=d585d802-12bc-4113-b0dd-38a88a6f407c epoch=1 (lease was taken over)
+2026-11-10 03:02:37,254 worker WARNING stale write rejected job=2f653b19-5fcb-4fa0-9cff-f99d869feb7e epoch=1 (lease was taken over)
+2026-11-10 03:02:37,478 worker INFO reaped 3 expired leases
+2026-11-10 03:02:37,517 worker WARNING stale write rejected job=be8a78b7-ff7e-488a-8607-39bc4871eef8 epoch=1 (lease was taken over)
+2026-11-10 03:02:37,625 worker WARNING stale write rejected job=b6917167-f5a3-4e3d-8c8a-01f11c674e3e epoch=1 (lease was taken over)
+2026-11-10 03:02:37,780 worker INFO worker w6.6 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:37,849 worker INFO reaped 3 expired leases
+2026-11-10 03:02:37,894 worker WARNING stale write rejected job=031b432c-87c9-4c32-bcc4-7059e481fd7c epoch=1 (lease was taken over)
+2026-11-10 03:02:37,904 worker WARNING stale write rejected job=93fe96d1-25c8-4535-a2a3-87094edc188b epoch=1 (lease was taken over)
+2026-11-10 03:02:37,999 worker WARNING stale write rejected job=7e8f92cb-9680-4164-8764-1b6d70de3245 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,198 worker INFO reaped 1 expired leases
+2026-11-10 03:02:38,224 worker INFO reaped 1 expired leases
+2026-11-10 03:02:38,260 worker WARNING stale write rejected job=3fed34a0-52e5-4ac2-9daf-052680015dcb epoch=1 (lease was taken over)
+2026-11-10 03:02:38,268 worker WARNING stale write rejected job=19e97e56-d0aa-4f0e-b551-f2e6c242cb03 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,484 worker INFO reaped 4 expired leases
+2026-11-10 03:02:38,485 worker WARNING stale write rejected job=4b01b721-5645-4d64-a50c-d4a35ea0ca70 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,531 worker WARNING stale write rejected job=743829e9-5fdb-43d0-b0b5-0a49fa37ccb4 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,564 worker WARNING stale write rejected job=76fd7a4b-9f3d-4000-95df-53b35ddeb304 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,938 worker INFO reaped 3 expired leases
+2026-11-10 03:02:38,939 worker WARNING stale write rejected job=f13ac857-7a7b-4471-9de8-66f0cf4e84e4 epoch=1 (lease was taken over)
+2026-11-10 03:02:38,955 worker WARNING stale write rejected job=4aae5e2a-d6de-4e55-91dc-31eaee070cae epoch=1 (lease was taken over)
+2026-11-10 03:02:39,042 worker WARNING stale write rejected job=8dd325b4-2e5d-4faa-a7e9-f22da7abf6e4 epoch=1 (lease was taken over)
+2026-11-10 03:02:39,285 worker INFO reaped 1 expired leases
+2026-11-10 03:02:39,306 worker INFO reaped 1 expired leases
+2026-11-10 03:02:39,394 worker INFO worker w6.7 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:39,492 worker WARNING stale write rejected job=dab5459d-6b71-4824-a5ad-317a237bbb60 epoch=1 (lease was taken over)
+2026-11-10 03:02:39,572 worker INFO reaped 3 expired leases
+2026-11-10 03:02:39,591 worker WARNING stale write rejected job=5749d931-7873-4884-bc14-ac581b23504a epoch=1 (lease was taken over)
+2026-11-10 03:02:39,610 worker WARNING stale write rejected job=92c08628-9dce-45a9-8722-806d0dfe22dc epoch=1 (lease was taken over)
+2026-11-10 03:02:39,797 worker WARNING stale write rejected job=1b57cd3f-7e96-438d-8e8d-917f4ad381a5 epoch=1 (lease was taken over)
+2026-11-10 03:02:39,982 worker INFO reaped 3 expired leases
+2026-11-10 03:02:40,035 worker WARNING stale write rejected job=aa397f6a-d5bd-4b53-95b4-762826de244c epoch=1 (lease was taken over)
+2026-11-10 03:02:40,104 worker WARNING stale write rejected job=c073c69c-0c8f-4cca-8587-c3670ae6a1f0 epoch=1 (lease was taken over)
+2026-11-10 03:02:40,119 worker WARNING stale write rejected job=1a8c32b8-aa4a-48f6-bb3c-dbb67bc3804d epoch=1 (lease was taken over)
+2026-11-10 03:02:40,338 worker INFO reaped 1 expired leases
+2026-11-10 03:02:40,355 worker INFO reaped 1 expired leases
+2026-11-10 03:02:40,401 worker WARNING stale write rejected job=d421aca8-740d-4082-87c9-c1458933f3ac epoch=1 (lease was taken over)
+2026-11-10 03:02:40,526 worker WARNING stale write rejected job=468ab676-a43a-4261-8b30-1bf419ab7806 epoch=1 (lease was taken over)
+2026-11-10 03:02:40,583 worker INFO reaped 3 expired leases
+2026-11-10 03:02:40,650 worker WARNING stale write rejected job=13bb1105-c4fc-4ee2-9880-260176deb98d epoch=1 (lease was taken over)
+2026-11-10 03:02:40,808 worker WARNING stale write rejected job=82fb71f0-9e00-44fd-b096-4e78d22e23c6 epoch=1 (lease was taken over)
+2026-11-10 03:02:40,808 worker WARNING stale write rejected job=7c40f91c-fd77-4a0d-a0bc-45a8ce40b045 epoch=1 (lease was taken over)
+2026-11-10 03:02:41,263 worker INFO worker w5.4 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:02:41,265 worker INFO reaped 3 expired leases
+2026-11-10 03:02:41,306 worker WARNING stale write rejected job=dfab90be-be8f-450f-9304-64e974f76edc epoch=1 (lease was taken over)
+2026-11-10 03:02:41,334 worker WARNING stale write rejected job=faa9fdbd-87e0-4c73-ac00-9c4572d0902d epoch=1 (lease was taken over)
+2026-11-10 03:02:41,413 worker WARNING stale write rejected job=53723165-34fb-4d38-8f1e-769eaa936a09 epoch=1 (lease was taken over)
+2026-11-10 03:02:41,434 worker INFO reaped 1 expired leases
+2026-11-10 03:02:41,444 worker INFO reaped 1 expired leases
+2026-11-10 03:02:41,605 worker WARNING stale write rejected job=53723165-34fb-4d38-8f1e-769eaa936a09 epoch=2 (lease was taken over)
+2026-11-10 03:02:41,622 worker WARNING stale write rejected job=57630757-beed-4ef4-a5b9-0c687b47fb53 epoch=1 (lease was taken over)
+2026-11-10 03:02:41,754 worker INFO reaped 3 expired leases
+2026-11-10 03:02:41,779 worker WARNING stale write rejected job=c08e8868-5866-4215-bd5b-1441387978af epoch=1 (lease was taken over)
+2026-11-10 03:02:41,797 worker WARNING stale write rejected job=2cc39a4a-75d3-447e-91a0-0f23181e6121 epoch=1 (lease was taken over)
+2026-11-10 03:02:42,017 worker WARNING stale write rejected job=f1d911d2-b09c-4ac9-8fe9-7f4ae35be074 epoch=1 (lease was taken over)
+2026-11-10 03:02:42,485 worker INFO reaped 2 expired leases
+2026-11-10 03:02:42,487 worker WARNING stale write rejected job=6fc837a3-3d0e-453d-8b76-8b8a0db1309e epoch=1 (lease was taken over)
+2026-11-10 03:02:42,504 worker INFO reaped 2 expired leases
+2026-11-10 03:02:42,538 worker WARNING stale write rejected job=90ccb377-7c14-4f7b-a2d6-0b6824618af2 epoch=1 (lease was taken over)
+2026-11-10 03:02:42,646 worker WARNING stale write rejected job=4ffc1957-14ea-4cf7-9842-e5521d72efa9 epoch=1 (lease was taken over)
+2026-11-10 03:02:42,655 worker WARNING stale write rejected job=4ffc1957-14ea-4cf7-9842-e5521d72efa9 epoch=2 (lease was taken over)
+2026-11-10 03:02:42,875 worker INFO reaped 3 expired leases
+2026-11-10 03:02:42,892 worker WARNING stale write rejected job=21745a21-c53e-455a-aa8a-4febbbfb1fa4 epoch=1 (lease was taken over)
+2026-11-10 03:02:42,925 worker WARNING stale write rejected job=726676dc-fd6f-41a4-bdbe-b9cb2bca2915 epoch=1 (lease was taken over)
+2026-11-10 03:02:43,010 worker WARNING stale write rejected job=202036aa-59ad-4b9a-b208-2526d157d4fc epoch=1 (lease was taken over)
+2026-11-10 03:02:43,374 worker INFO worker w7.4 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:02:43,376 worker INFO reaped 1 expired leases
+2026-11-10 03:02:43,464 worker WARNING stale write rejected job=eaf48aea-4dd2-4567-86a5-2053372c422a epoch=1 (lease was taken over)
+2026-11-10 03:02:43,486 worker INFO reaped 2 expired leases
+2026-11-10 03:02:43,510 worker INFO reaped 1 expired leases
+2026-11-10 03:02:43,601 worker WARNING stale write rejected job=781d9d18-0838-455d-9618-73c5cea89268 epoch=1 (lease was taken over)
+2026-11-10 03:02:43,673 worker WARNING stale write rejected job=e187a67f-b88c-4e26-853d-d1bf2953daf7 epoch=1 (lease was taken over)
+2026-11-10 03:02:43,709 worker WARNING stale write rejected job=5ddc0b0a-ff38-43b3-948d-3638b970c60b epoch=1 (lease was taken over)
+2026-11-10 03:02:44,038 worker INFO reaped 3 expired leases
+2026-11-10 03:02:44,059 worker WARNING stale write rejected job=dea543a3-1f24-49f3-95ca-4732b781eea3 epoch=1 (lease was taken over)
+2026-11-10 03:02:44,183 worker WARNING stale write rejected job=efed2d11-b993-4a60-a4b6-f3809674799b epoch=1 (lease was taken over)
+2026-11-10 03:02:44,251 worker WARNING stale write rejected job=6d87eef6-01ed-46b4-afb8-47e77dfa9a91 epoch=1 (lease was taken over)
+2026-11-10 03:02:44,409 worker INFO reaped 1 expired leases
+2026-11-10 03:02:44,494 worker WARNING stale write rejected job=f09dd048-2940-44b1-bcfd-35b8725878ee epoch=1 (lease was taken over)
+2026-11-10 03:02:44,516 worker INFO reaped 3 expired leases
+2026-11-10 03:02:44,554 worker WARNING stale write rejected job=8922ef7c-2b31-426c-9074-ed2c923dc979 epoch=1 (lease was taken over)
+2026-11-10 03:02:44,599 worker WARNING stale write rejected job=a4d74276-d617-4af2-9288-99c9d09e378b epoch=1 (lease was taken over)
+2026-11-10 03:02:44,624 worker WARNING stale write rejected job=6aeb0208-04dc-458d-b223-fda22e9c078a epoch=1 (lease was taken over)
+2026-11-10 03:02:45,078 worker INFO reaped 4 expired leases
+2026-11-10 03:02:45,145 worker WARNING stale write rejected job=5202f4b5-70ad-4e8b-b6a2-25234b8a9e83 epoch=1 (lease was taken over)
+2026-11-10 03:02:45,158 worker WARNING stale write rejected job=12697896-1b4a-49ad-a0fd-9542dce54833 epoch=1 (lease was taken over)
+2026-11-10 03:02:45,197 worker WARNING stale write rejected job=f5feb1f1-37c5-44f7-906b-b9c234214a7e epoch=1 (lease was taken over)
+2026-11-10 03:02:45,374 worker INFO worker w1.5 started faults=worker_clock isolation=read_committed effect=db skew=4.0
+2026-11-10 03:02:45,376 worker INFO reaped 4 expired leases
+2026-11-10 03:02:45,454 worker WARNING stale write rejected job=6b39c48b-dd9f-48ab-b775-a79f80762cb5 epoch=1 (lease was taken over)
+2026-11-10 03:02:45,518 worker INFO reaped 1 expired leases
+2026-11-10 03:02:45,525 worker WARNING stale write rejected job=65b5b792-0ac8-4eff-8646-bff5be6b4729 epoch=1 (lease was taken over)
+2026-11-10 03:02:45,539 worker INFO reaped 1 expired leases
+2026-11-10 03:02:45,661 worker WARNING stale write rejected job=3bb7dec0-0a52-49b5-a407-671ccc563627 epoch=1 (lease was taken over)
+2026-11-10 03:02:45,749 worker WARNING stale write rejected job=3bb7dec0-0a52-49b5-a407-671ccc563627 epoch=2 (lease was taken over)
+2026-11-10 03:02:45,828 worker WARNING stale write rejected job=faf6c5e1-e89f-4fdc-baa1-4c7cf677f267 epoch=1 (lease was taken over)
+2026-11-10 03:02:46,525 worker INFO reaped 1 expired leases
+2026-11-10 03:02:46,560 worker INFO reaped 2 expired leases
+2026-11-10 03:02:46,589 worker WARNING stale write rejected job=31ad6d50-6b16-406f-9837-0b70adde70fa epoch=1 (lease was taken over)
+2026-11-10 03:02:46,741 worker WARNING stale write rejected job=c6664c45-cb19-4a32-9797-054faffcc7b8 epoch=1 (lease was taken over)
+2026-11-10 03:02:46,756 worker WARNING stale write rejected job=8d1735ae-f9a2-4af1-b98a-0dabf4c52cfc epoch=1 (lease was taken over)
+2026-11-10 03:02:46,835 worker INFO reaped 3 expired leases
+2026-11-10 03:02:46,959 worker WARNING stale write rejected job=f4f17a7b-b335-47b4-8839-aa119f2d0ca8 epoch=1 (lease was taken over)
+2026-11-10 03:02:46,967 worker WARNING stale write rejected job=02a22d39-9db2-44f1-84c4-e99294e50ed8 epoch=1 (lease was taken over)
+2026-11-10 03:02:47,016 worker WARNING stale write rejected job=cba20710-33e6-4612-a6fc-ebf4e9a783f5 epoch=1 (lease was taken over)
+2026-11-10 03:02:47,648 worker INFO reaped 3 expired leases
+2026-11-10 03:02:47,651 worker INFO worker w7.5 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:02:47,782 worker WARNING stale write rejected job=a2ad8e9a-5d2b-43ca-aa2a-2df193a76975 epoch=1 (lease was taken over)
+2026-11-10 03:02:47,854 worker WARNING stale write rejected job=fc776bfd-888d-40b8-9e20-41de379b2e39 epoch=1 (lease was taken over)
+2026-11-10 03:02:47,860 worker INFO reaped 2 expired leases
+2026-11-10 03:02:47,876 worker WARNING stale write rejected job=d350a9b5-df65-4d81-b5ea-ec48c128799c epoch=1 (lease was taken over)
+2026-11-10 03:02:47,943 worker WARNING stale write rejected job=d636bb88-2483-4061-b1c8-3718150e652c epoch=1 (lease was taken over)
+2026-11-10 03:02:48,114 worker WARNING stale write rejected job=027b347c-acd9-41e1-bda8-6bbb7e917de2 epoch=1 (lease was taken over)
+2026-11-10 03:02:48,657 worker INFO reaped 3 expired leases
+2026-11-10 03:02:48,718 worker WARNING stale write rejected job=bda77246-afdf-483d-975a-56b3acf03225 epoch=1 (lease was taken over)
+2026-11-10 03:02:48,732 worker WARNING stale write rejected job=547a809c-4ca1-4ab3-8c34-26e71c0372d0 epoch=1 (lease was taken over)
+2026-11-10 03:02:48,748 worker WARNING stale write rejected job=53770009-d4d9-4d52-8e69-a32c27ddfd85 epoch=1 (lease was taken over)
+2026-11-10 03:02:48,873 worker INFO reaped 2 expired leases
+2026-11-10 03:02:48,887 worker WARNING stale write rejected job=3448f063-66fb-4d90-af17-b86bbfcb1631 epoch=1 (lease was taken over)
+2026-11-10 03:02:48,915 worker INFO reaped 2 expired leases
+2026-11-10 03:02:48,963 worker WARNING stale write rejected job=f446cdf7-6b64-4d75-a04c-85059b13eafc epoch=1 (lease was taken over)
+2026-11-10 03:02:48,990 worker WARNING stale write rejected job=bda77246-afdf-483d-975a-56b3acf03225 epoch=2 (lease was taken over)
+2026-11-10 03:02:49,015 worker WARNING stale write rejected job=f446cdf7-6b64-4d75-a04c-85059b13eafc epoch=2 (lease was taken over)
+2026-11-10 03:02:49,217 worker INFO worker w6.8 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:49,710 worker INFO reaped 4 expired leases
+2026-11-10 03:02:49,729 worker WARNING stale write rejected job=80999588-ab9b-4d59-b357-a1e338fb8810 epoch=1 (lease was taken over)
+2026-11-10 03:02:49,884 worker INFO reaped 2 expired leases
+2026-11-10 03:02:49,893 worker WARNING stale write rejected job=60546d44-27df-4cf9-aae4-8d3a18542b69 epoch=1 (lease was taken over)
+2026-11-10 03:02:49,924 worker WARNING stale write rejected job=db56282d-5136-48e2-93f2-4275386e2e91 epoch=1 (lease was taken over)
+2026-11-10 03:02:50,023 worker WARNING stale write rejected job=80999588-ab9b-4d59-b357-a1e338fb8810 epoch=2 (lease was taken over)
+2026-11-10 03:02:50,110 worker INFO reaped 3 expired leases
+2026-11-10 03:02:50,173 worker WARNING stale write rejected job=47b1a6af-1b55-4309-ac3d-eb012c50eabc epoch=1 (lease was taken over)
+2026-11-10 03:02:50,242 worker WARNING stale write rejected job=3e86a83e-5698-4494-bc18-7ba258fd216c epoch=1 (lease was taken over)
+2026-11-10 03:02:50,327 worker WARNING stale write rejected job=a6761a54-19a0-4b0e-983b-f5fc34e08b95 epoch=1 (lease was taken over)
+2026-11-10 03:02:50,856 worker INFO reaped 4 expired leases
+2026-11-10 03:02:50,891 worker WARNING stale write rejected job=09b11d1d-24f8-4e8c-8c19-071311b5d9a2 epoch=1 (lease was taken over)
+2026-11-10 03:02:50,901 worker WARNING stale write rejected job=de9cfdcf-fa62-4760-8d64-73c0df7d3fe6 epoch=1 (lease was taken over)
+2026-11-10 03:02:50,958 worker INFO reaped 1 expired leases
+2026-11-10 03:02:50,979 worker WARNING stale write rejected job=9c94f6a2-1183-4de0-af5d-c98248543f4c epoch=1 (lease was taken over)
+2026-11-10 03:02:51,116 worker WARNING stale write rejected job=de9cfdcf-fa62-4760-8d64-73c0df7d3fe6 epoch=2 (lease was taken over)
+2026-11-10 03:02:51,190 worker INFO reaped 1 expired leases
+2026-11-10 03:02:51,224 worker INFO reaped 2 expired leases
+2026-11-10 03:02:51,237 worker WARNING stale write rejected job=801aefab-3225-4994-908a-ac5b942bc164 epoch=1 (lease was taken over)
+2026-11-10 03:02:51,302 worker WARNING stale write rejected job=1817a7a6-4bcd-4b1c-aba0-c69e9b37f30a epoch=1 (lease was taken over)
+2026-11-10 03:02:51,392 worker WARNING stale write rejected job=786a0faa-b0d7-4cc0-a2b6-e8a6dea3898d epoch=1 (lease was taken over)
+2026-11-10 03:02:51,554 worker INFO worker w5.5 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:02:51,556 worker INFO reaped 3 expired leases
+2026-11-10 03:02:51,584 worker WARNING stale write rejected job=34bc9163-1892-4539-99c4-ea30747258c5 epoch=1 (lease was taken over)
+2026-11-10 03:02:51,603 worker WARNING stale write rejected job=d5a2175e-9482-4ca0-b6a7-3cf437d236f1 epoch=1 (lease was taken over)
+2026-11-10 03:02:51,673 worker WARNING stale write rejected job=d525aac4-695f-4192-a838-a7f8467d8320 epoch=1 (lease was taken over)
+2026-11-10 03:02:51,929 worker INFO reaped 3 expired leases
+2026-11-10 03:02:51,949 worker WARNING stale write rejected job=71993602-1e29-48b2-9b7d-6bb2ea29c10a epoch=1 (lease was taken over)
+2026-11-10 03:02:51,955 worker WARNING stale write rejected job=bdcea075-8712-411a-ba80-a27b396c362c epoch=1 (lease was taken over)
+2026-11-10 03:02:52,123 worker WARNING stale write rejected job=9b36b7d9-a47a-454e-aab1-141a3cd254ce epoch=1 (lease was taken over)
+2026-11-10 03:02:52,129 worker INFO reaped 2 expired leases
+2026-11-10 03:02:52,204 worker WARNING stale write rejected job=3181b34b-9eab-4319-8d65-79be98eb314a epoch=1 (lease was taken over)
+2026-11-10 03:02:52,207 worker WARNING stale write rejected job=9b36b7d9-a47a-454e-aab1-141a3cd254ce epoch=2 (lease was taken over)
+2026-11-10 03:02:52,734 worker INFO reaped 3 expired leases
+2026-11-10 03:02:52,798 worker WARNING stale write rejected job=d864ea15-167a-4090-b026-9882b68464d9 epoch=1 (lease was taken over)
+2026-11-10 03:02:52,876 worker WARNING stale write rejected job=89b826d9-f0cd-4076-afcc-ac408582edf2 epoch=1 (lease was taken over)
+2026-11-10 03:02:52,887 worker WARNING stale write rejected job=0360f421-babd-46d8-a145-7b0560f84ea9 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,052 worker INFO reaped 3 expired leases
+2026-11-10 03:02:53,153 worker WARNING stale write rejected job=e0220300-cba5-4dc0-9123-0f92fe4ac0a1 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,171 worker WARNING stale write rejected job=65b77574-dc5c-4f18-8a67-83eee25c0ebc epoch=1 (lease was taken over)
+2026-11-10 03:02:53,219 worker WARNING stale write rejected job=38689e50-2621-478f-8951-9129de091c2c epoch=1 (lease was taken over)
+2026-11-10 03:02:53,266 worker INFO reaped 2 expired leases
+2026-11-10 03:02:53,350 worker WARNING stale write rejected job=1c05c69e-a5f1-4de1-91d4-31aa2a435244 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,388 worker WARNING stale write rejected job=66a9eb4d-f682-45f0-96ac-0b050ccba8a1 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,433 worker INFO worker w7.6 started faults=worker_clock isolation=read_committed effect=db skew=1.0
+2026-11-10 03:02:53,435 worker INFO reaped 1 expired leases
+2026-11-10 03:02:53,584 worker WARNING stale write rejected job=c8ced6d5-df6f-4e4a-9766-64fe1aed9f79 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,803 worker INFO reaped 3 expired leases
+2026-11-10 03:02:53,805 worker WARNING stale write rejected job=0e23a28e-cd36-4712-8589-3aa875bfe301 epoch=1 (lease was taken over)
+2026-11-10 03:02:53,822 worker WARNING stale write rejected job=55ce38d9-525c-44e5-b94c-a152987d2cac epoch=1 (lease was taken over)
+2026-11-10 03:02:53,937 worker WARNING stale write rejected job=1e8a379d-bd7e-4eb5-8392-de3ca16c9fd5 epoch=1 (lease was taken over)
+2026-11-10 03:02:54,146 worker INFO reaped 3 expired leases
+2026-11-10 03:02:54,167 worker WARNING stale write rejected job=f0769af0-4fe1-4168-9b64-45b59c85f0f6 epoch=1 (lease was taken over)
+2026-11-10 03:02:54,219 worker WARNING stale write rejected job=af2c94af-38cb-4350-8b0c-2d00645ddf8b epoch=1 (lease was taken over)
+2026-11-10 03:02:54,389 worker INFO reaped 1 expired leases
+2026-11-10 03:02:54,442 worker WARNING stale write rejected job=7be5ef54-8ec3-4fcf-858a-0537481b124f epoch=1 (lease was taken over)
+2026-11-10 03:02:54,464 worker WARNING stale write rejected job=762afb16-d8db-40d1-b68e-130c1adccb2c epoch=1 (lease was taken over)
+2026-11-10 03:02:54,851 worker INFO reaped 3 expired leases
+2026-11-10 03:02:54,853 worker WARNING stale write rejected job=d32ed172-8ef7-4d2e-993b-8b9060d6d7b9 epoch=1 (lease was taken over)
+2026-11-10 03:02:54,902 worker WARNING stale write rejected job=dd30ec48-6e39-47e4-8707-c75e013f36f7 epoch=1 (lease was taken over)
+2026-11-10 03:02:54,972 worker INFO worker w4.3 started faults=worker_clock isolation=read_committed effect=db skew=-2.0
+2026-11-10 03:02:55,252 worker INFO reaped 3 expired leases
+2026-11-10 03:02:55,315 worker WARNING stale write rejected job=de0dede6-413f-4df3-a1df-42aba5fda91f epoch=1 (lease was taken over)
+2026-11-10 03:02:55,362 worker WARNING stale write rejected job=7d787879-1ae1-44c6-a5e8-121585899724 epoch=1 (lease was taken over)
+2026-11-10 03:02:55,380 worker WARNING stale write rejected job=a6a72ce9-f68e-4d83-8168-9a9bf5e7014c epoch=1 (lease was taken over)
+2026-11-10 03:02:55,516 worker INFO reaped 1 expired leases
+2026-11-10 03:02:55,529 worker INFO reaped 1 expired leases
+2026-11-10 03:02:55,612 worker WARNING stale write rejected job=28299996-d20c-4317-a933-7be4e2ca7109 epoch=1 (lease was taken over)
+2026-11-10 03:02:55,628 worker WARNING stale write rejected job=a983b9ef-e06a-426d-b551-00aadd0baff6 epoch=1 (lease was taken over)
+2026-11-10 03:02:55,990 worker INFO reaped 3 expired leases
+2026-11-10 03:02:56,051 worker WARNING stale write rejected job=01eb1ab9-e189-4b16-9889-294ac12fcac2 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,057 worker WARNING stale write rejected job=50c423c0-4c1c-4fcf-94c5-e45fbda5bc95 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,176 worker WARNING stale write rejected job=288520d9-12d9-4ba1-804b-a50b8a25ac45 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,415 worker INFO reaped 5 expired leases
+2026-11-10 03:02:56,498 worker WARNING stale write rejected job=1e15d1c7-9080-43e8-9705-32c261dd69a4 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,522 worker WARNING stale write rejected job=9576f2d1-115f-4cf7-aacd-0e57e9b215d8 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,584 worker WARNING stale write rejected job=1575c94e-0454-4788-81d2-c608dd23a2a3 epoch=1 (lease was taken over)
+2026-11-10 03:02:56,592 worker INFO reaped 1 expired leases
+2026-11-10 03:02:56,678 worker INFO reaped 1 expired leases
+2026-11-10 03:02:56,724 worker WARNING stale write rejected job=1929d279-d963-4320-a3d1-b30a84bcd39d epoch=1 (lease was taken over)
+2026-11-10 03:02:56,787 worker WARNING stale write rejected job=1575c94e-0454-4788-81d2-c608dd23a2a3 epoch=2 (lease was taken over)
+2026-11-10 03:02:57,071 worker INFO reaped 3 expired leases
+2026-11-10 03:02:57,103 worker WARNING stale write rejected job=0ebf9c42-c01e-415c-bf4f-ed6d7d6ca033 epoch=1 (lease was taken over)
+2026-11-10 03:02:57,121 worker WARNING stale write rejected job=559821f5-656d-4d50-9479-96d04daff297 epoch=1 (lease was taken over)
+2026-11-10 03:02:57,130 worker WARNING stale write rejected job=23e138b8-d9e8-4fc1-aac8-835fa7deb51c epoch=1 (lease was taken over)
+2026-11-10 03:02:57,336 worker INFO worker w6.9 started faults=worker_clock isolation=read_committed effect=db skew=-3.0
+2026-11-10 03:02:57,438 worker INFO reaped 4 expired leases
+2026-11-10 03:02:57,512 worker WARNING stale write rejected job=efb550cd-ce0d-4677-816c-8374be9a83ef epoch=1 (lease was taken over)
+2026-11-10 03:02:57,520 worker WARNING stale write rejected job=869c71f2-40bb-4c63-84b0-ba9b8c84f048 epoch=1 (lease was taken over)
+2026-11-10 03:02:57,533 worker WARNING stale write rejected job=61047293-d8e2-4848-8f9b-de413562fd79 epoch=1 (lease was taken over)
+2026-11-10 03:02:57,680 worker INFO reaped 2 expired leases
+2026-11-10 03:02:57,702 worker WARNING stale write rejected job=5e129f1b-8f79-4829-bbb5-d370de36dbc5 epoch=1 (lease was taken over)
+2026-11-10 03:02:57,721 worker INFO reaped 1 expired leases
+2026-11-10 03:02:57,735 worker WARNING stale write rejected job=55cc6f4f-d17a-4da3-b399-c2186a0649ad epoch=1 (lease was taken over)
+2026-11-10 03:02:57,780 worker WARNING stale write rejected job=55cc6f4f-d17a-4da3-b399-c2186a0649ad epoch=2 (lease was taken over)
+2026-11-10 03:02:58,306 worker INFO reaped 3 expired leases
+2026-11-10 03:02:58,308 worker WARNING stale write rejected job=6260ecd3-1220-440d-bd12-d07c3d5ed99b epoch=1 (lease was taken over)
+2026-11-10 03:02:58,327 worker WARNING stale write rejected job=d9a5501f-a8f8-4b08-a843-6e738dfa3884 epoch=1 (lease was taken over)
+2026-11-10 03:02:58,374 worker WARNING stale write rejected job=c413ba38-d7d6-4036-8003-4c265707f9a9 epoch=1 (lease was taken over)
+2026-11-10 03:02:58,533 worker INFO reaped 2 expired leases
+2026-11-10 03:02:58,556 worker WARNING stale write rejected job=c413ba38-d7d6-4036-8003-4c265707f9a9 epoch=2 (lease was taken over)
+2026-11-10 03:02:58,566 worker WARNING stale write rejected job=70c9d2ec-0a6b-4e89-9074-2e15d3c17837 epoch=1 (lease was taken over)
+2026-11-10 03:02:58,789 worker INFO reaped 1 expired leases
+2026-11-10 03:02:58,802 worker INFO reaped 1 expired leases
+2026-11-10 03:02:58,839 worker WARNING stale write rejected job=b280b95c-5676-465c-b2d0-4c80453627cf epoch=1 (lease was taken over)
+2026-11-10 03:02:58,890 worker WARNING stale write rejected job=8007435c-3628-49fb-9b36-570a31140c9a epoch=1 (lease was taken over)
+2026-11-10 03:02:59,326 worker INFO worker w5.6 started faults=worker_clock isolation=read_committed effect=db skew=3.0
+2026-11-10 03:02:59,328 worker INFO reaped 3 expired leases
+2026-11-10 03:02:59,349 worker WARNING stale write rejected job=d06fab2c-0699-455e-a924-bcfc6789323c epoch=1 (lease was taken over)
+2026-11-10 03:02:59,379 worker WARNING stale write rejected job=8f60b011-9ffe-4d7d-acc2-c4527187d4aa epoch=1 (lease was taken over)
+2026-11-10 03:02:59,421 worker WARNING stale write rejected job=4276f4c3-5093-4337-b7c9-d2fc734eef47 epoch=1 (lease was taken over)
+2026-11-10 03:02:59,735 worker INFO reaped 3 expired leases
+2026-11-10 03:02:59,808 worker WARNING stale write rejected job=63e31324-a8ff-413c-bc5d-5932d88898e0 epoch=1 (lease was taken over)
+2026-11-10 03:02:59,851 worker WARNING stale write rejected job=2a10cc4b-fc9d-4c73-aac2-9ff0dcd68208 epoch=1 (lease was taken over)
+2026-11-10 03:02:59,933 worker WARNING stale write rejected job=6fe9169f-16bb-4b1e-be62-ddbea096a7c4 epoch=1 (lease was taken over)
+2026-11-10 03:03:00,051 worker INFO reaped 1 expired leases
+2026-11-10 03:03:00,165 worker WARNING stale write rejected job=de97c1b5-9467-4622-b3ae-9da0da3992ff epoch=1 (lease was taken over)
+2026-11-10 03:03:00,518 worker INFO reaped 3 expired leases
+2026-11-10 03:03:00,567 worker WARNING stale write rejected job=aeb7ee7d-422e-4a50-85dc-f528610edac9 epoch=1 (lease was taken over)
+2026-11-10 03:03:00,682 worker WARNING stale write rejected job=382271d3-4b5b-402e-998b-7a1cd643a58b epoch=1 (lease was taken over)
+2026-11-10 03:03:00,780 worker INFO reaped 2 expired leases
+2026-11-10 03:03:00,787 worker WARNING stale write rejected job=c11020f3-149e-49a3-9f20-41491b946dc9 epoch=1 (lease was taken over)
+2026-11-10 03:03:00,853 worker WARNING stale write rejected job=c11020f3-149e-49a3-9f20-41491b946dc9 epoch=2 (lease was taken over)
+2026-11-10 03:03:00,928 worker INFO reaped 2 expired leases
+2026-11-10 03:03:00,974 worker WARNING stale write rejected job=9a452c84-51fd-404d-9ad0-1e8e56ae917f epoch=1 (lease was taken over)
+2026-11-10 03:03:01,015 worker WARNING stale write rejected job=c105236e-6a35-4824-9015-e8fbfe5b6f0d epoch=1 (lease was taken over)
+2026-11-10 03:03:01,081 worker WARNING stale write rejected job=9a452c84-51fd-404d-9ad0-1e8e56ae917f epoch=2 (lease was taken over)
+2026-11-10 03:03:01,084 worker INFO reaped 1 expired leases
+2026-11-10 03:03:01,287 worker WARNING stale write rejected job=ab3b73ea-f47b-4c4d-9e4f-e965c803ec8a epoch=1 (lease was taken over)
+2026-11-10 03:03:01,314 worker INFO worker w3.3 started faults=worker_clock isolation=read_committed effect=db skew=2.0
+2026-11-10 03:03:01,316 worker INFO reaped 2 expired leases
+2026-11-10 03:03:01,360 worker WARNING stale write rejected job=c27cc5e8-3342-4cb6-9811-ebd3e109ccc1 epoch=1 (lease was taken over)
+2026-11-10 03:03:01,388 worker WARNING stale write rejected job=f0620a10-a704-483a-bc6e-ff47342367bc epoch=1 (lease was taken over)
+2026-11-10 03:03:01,687 worker INFO reaped 3 expired leases
+2026-11-10 03:03:01,701 worker WARNING stale write rejected job=cd0be381-b2de-47ec-8c60-d61d2bbdc002 epoch=1 (lease was taken over)
+2026-11-10 03:03:01,814 worker WARNING stale write rejected job=049f02b3-818e-4985-95fd-7241fa3987e4 epoch=1 (lease was taken over)
+2026-11-10 03:03:01,856 worker INFO reaped 2 expired leases
+2026-11-10 03:03:01,861 worker WARNING stale write rejected job=0bdefa38-e557-4652-b29b-da81059628c2 epoch=1 (lease was taken over)
+2026-11-10 03:03:01,955 worker WARNING stale write rejected job=0bdefa38-e557-4652-b29b-da81059628c2 epoch=2 (lease was taken over)
+2026-11-10 03:03:02,093 worker WARNING stale write rejected job=20dec770-cff9-47bc-af32-0d0e1313da6f epoch=1 (lease was taken over)
+2026-11-10 03:03:02,375 worker INFO reaped 2 expired leases
+2026-11-10 03:03:02,376 worker WARNING stale write rejected job=51adb35a-7532-4f90-a1d6-ed588ce8b19b epoch=1 (lease was taken over)
+2026-11-10 03:03:02,385 worker WARNING stale write rejected job=2eea7305-0492-4932-a538-9bad4d96494f epoch=1 (lease was taken over)
+2026-11-10 03:03:02,789 worker INFO reaped 3 expired leases
+2026-11-10 03:03:02,844 worker WARNING stale write rejected job=d86f7c46-0450-4bc5-939a-a51b0e9a417f epoch=1 (lease was taken over)
+2026-11-10 03:03:02,915 worker WARNING stale write rejected job=9bea4c07-6c8f-4ffd-87df-1478bc6a347e epoch=1 (lease was taken over)
+2026-11-10 03:03:03,007 worker INFO reaped 2 expired leases
+2026-11-10 03:03:03,055 worker WARNING stale write rejected job=40d3caed-5dc8-46e4-877c-acf5b5c8dc72 epoch=1 (lease was taken over)
+2026-11-10 03:03:03,128 worker INFO reaped 1 expired leases
+2026-11-10 03:03:03,177 worker WARNING stale write rejected job=e3376eba-a095-48b4-8e2d-ab58194d5b05 epoch=1 (lease was taken over)
+2026-11-10 03:03:03,216 worker WARNING stale write rejected job=d0099f14-879d-4605-807c-0de1bdbb1d66 epoch=1 (lease was taken over)
+2026-11-10 03:03:03,252 worker WARNING stale write rejected job=35a21cea-fcf8-4db9-8b29-534c09e4aaab epoch=1 (lease was taken over)
+2026-11-10 03:03:03,342 worker INFO worker w0.2 started faults=worker_clock isolation=read_committed effect=db skew=0.0
+2026-11-10 03:03:03,470 worker INFO reaped 2 expired leases
+2026-11-10 03:03:03,487 worker WARNING stale write rejected job=943dad7a-de05-4097-bb48-540d6fccf3eb epoch=1 (lease was taken over)
+2026-11-10 03:03:03,534 worker WARNING stale write rejected job=6ff65061-67b9-4121-a473-eee6175f85b1 epoch=1 (lease was taken over)
+2026-11-10 03:03:04,042 worker INFO reaped 3 expired leases
+2026-11-10 03:03:04,078 worker WARNING stale write rejected job=039ab448-871e-4f77-96cb-01426bd2c2bf epoch=1 (lease was taken over)
+2026-11-10 03:03:04,136 worker INFO reaped 3 expired leases
+2026-11-10 03:03:04,148 worker WARNING stale write rejected job=589a917e-9049-48c6-8bf0-a4eff96ce556 epoch=1 (lease was taken over)
+2026-11-10 03:03:04,196 worker WARNING stale write rejected job=589a917e-9049-48c6-8bf0-a4eff96ce556 epoch=2 (lease was taken over)
+2026-11-10 03:03:04,274 worker WARNING stale write rejected job=3f474661-508a-44f8-a1db-11cb87c7d337 epoch=1 (lease was taken over)
+2026-11-10 03:03:04,396 worker INFO reaped 1 expired leases
+2026-11-10 03:03:04,406 worker WARNING stale write rejected job=151376a8-2ce2-479a-8d8b-32782f6ab0fd epoch=2 (lease was taken over)
+2026-11-10 03:03:04,645 worker INFO reaped 2 expired leases
+2026-11-10 03:03:04,706 worker WARNING stale write rejected job=cf1a9669-ee4e-4ad8-b6e1-8fa28c604680 epoch=1 (lease was taken over)
+2026-11-10 03:03:04,718 worker WARNING stale write rejected job=54e5ddb4-a723-485d-b23a-e370c0db5cb4 epoch=1 (lease was taken over)
+2026-11-10 03:03:04,945 worker INFO worker w4.4 started faults=worker_clock isolation=read_committed effect=db skew=-2.0
+2026-11-10 03:03:05,090 worker INFO reaped 2 expired leases
+2026-11-10 03:03:05,140 worker WARNING stale write rejected job=d11c63a0-6597-484b-a5cc-5d2c61b7a00c epoch=1 (lease was taken over)
+2026-11-10 03:03:05,170 worker INFO reaped 2 expired leases
+2026-11-10 03:03:05,361 worker WARNING stale write rejected job=d11c63a0-6597-484b-a5cc-5d2c61b7a00c epoch=2 (lease was taken over)
+2026-11-10 03:03:05,930 worker INFO worker w7.6 stopped (serialization retries: 0)
+2026-11-10 03:03:05,930 worker INFO worker w2.5 stopped (serialization retries: 0)
+2026-11-10 03:03:05,939 worker INFO worker w3.3 stopped (serialization retries: 0)
+2026-11-10 03:03:05,940 worker INFO worker w5.6 stopped (serialization retries: 0)
+2026-11-10 03:03:05,940 worker INFO worker w0.2 stopped (serialization retries: 0)
+2026-11-10 03:03:05,960 worker INFO worker w1.5 stopped (serialization retries: 0)
+2026-11-10 03:03:05,976 worker INFO worker w6.9 stopped (serialization retries: 0)
+2026-11-10 03:03:05,978 worker INFO worker w4.4 stopped (serialization retries: 0)

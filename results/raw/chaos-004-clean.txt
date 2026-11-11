@@ -1,0 +1,74 @@
+== chaos-004-clean  20261110T023004Z
+code=2bf9578fa64e faults=none effect_mode=db isolation=read_committed
+jobs=10000 workers=8 kill_interval=2.0±0.5s stop_frac=0.0 pause=8.0s lease_ttl=5.0s job_ms=50-300
+dup_concurrent=0.15x4 dup_later=0.15 timeout_retry=0.05 cancel early/running/late=0.05/0.04/0.01 fail=0.02
+t=   5.1s submitted= 2849 queued=2532 running=10 succeeded=185 failed=2 cancelled=120 kills=2 stops=0 workers_active=8
+t=  10.2s submitted= 6670 queued=5962 running=11 succeeded=380 failed=7 cancelled=310 kills=5 stops=0 workers_active=8
+t=  15.3s submitted= 9235 queued=8167 running=9 succeeded=585 failed=15 cancelled=459 kills=7 stops=0 workers_active=8
+t=  20.4s submitted=10000 queued=8640 running=11 succeeded=778 failed=17 cancelled=554 kills=10 stops=0 workers_active=8
+t=  25.4s submitted=10000 queued=8414 running=10 succeeded=937 failed=20 cancelled=619 kills=12 stops=0 workers_active=8
+t=  30.5s submitted=10000 queued=8193 running=10 succeeded=1093 failed=20 cancelled=684 kills=14 stops=0 workers_active=8
+t=  35.5s submitted=10000 queued=7974 running=10 succeeded=1271 failed=22 cancelled=723 kills=17 stops=0 workers_active=8
+t=  40.6s submitted=10000 queued=7751 running=10 succeeded=1484 failed=30 cancelled=725 kills=19 stops=0 workers_active=8
+t=  45.6s submitted=10000 queued=7519 running=10 succeeded=1711 failed=35 cancelled=725 kills=22 stops=0 workers_active=8
+t=  50.7s submitted=10000 queued=7300 running=10 succeeded=1927 failed=38 cancelled=725 kills=24 stops=0 workers_active=8
+t=  55.7s submitted=10000 queued=7074 running=11 succeeded=2147 failed=43 cancelled=725 kills=27 stops=0 workers_active=8
+t=  60.8s submitted=10000 queued=6846 running=11 succeeded=2373 failed=45 cancelled=725 kills=29 stops=0 workers_active=8
+t=  65.9s submitted=10000 queued=6621 running=10 succeeded=2591 failed=53 cancelled=725 kills=31 stops=0 workers_active=8
+t=  71.0s submitted=10000 queued=6399 running=11 succeeded=2808 failed=57 cancelled=725 kills=34 stops=0 workers_active=8
+t=  76.0s submitted=10000 queued=6182 running=10 succeeded=3025 failed=58 cancelled=725 kills=36 stops=0 workers_active=8
+t=  81.1s submitted=10000 queued=5962 running=10 succeeded=3239 failed=64 cancelled=725 kills=39 stops=0 workers_active=8
+t=  86.1s submitted=10000 queued=5748 running=11 succeeded=3447 failed=69 cancelled=725 kills=42 stops=0 workers_active=8
+t=  91.2s submitted=10000 queued=5526 running=10 succeeded=3668 failed=71 cancelled=725 kills=45 stops=0 workers_active=8
+t=  96.2s submitted=10000 queued=5304 running=10 succeeded=3887 failed=74 cancelled=725 kills=47 stops=0 workers_active=8
+t= 101.3s submitted=10000 queued=5081 running=11 succeeded=4107 failed=76 cancelled=725 kills=50 stops=0 workers_active=8
+t= 106.4s submitted=10000 queued=4860 running=10 succeeded=4322 failed=83 cancelled=725 kills=52 stops=0 workers_active=8
+t= 111.5s submitted=10000 queued=4644 running=11 succeeded=4535 failed=85 cancelled=725 kills=55 stops=0 workers_active=8
+t= 116.5s submitted=10000 queued=4432 running=10 succeeded=4742 failed=91 cancelled=725 kills=57 stops=0 workers_active=8
+t= 121.6s submitted=10000 queued=4209 running=10 succeeded=4960 failed=96 cancelled=725 kills=60 stops=0 workers_active=8
+t= 126.6s submitted=10000 queued=3991 running=10 succeeded=5171 failed=103 cancelled=725 kills=62 stops=0 workers_active=8
+t= 131.7s submitted=10000 queued=3765 running=10 succeeded=5388 failed=112 cancelled=725 kills=64 stops=0 workers_active=8
+t= 136.8s submitted=10000 queued=3541 running=11 succeeded=5607 failed=116 cancelled=725 kills=67 stops=0 workers_active=8
+t= 141.8s submitted=10000 queued=3329 running=10 succeeded=5811 failed=125 cancelled=725 kills=70 stops=0 workers_active=8
+t= 146.9s submitted=10000 queued=3106 running=10 succeeded=6029 failed=130 cancelled=725 kills=72 stops=0 workers_active=8
+t= 151.9s submitted=10000 queued=2880 running=11 succeeded=6252 failed=132 cancelled=725 kills=75 stops=0 workers_active=8
+t= 157.0s submitted=10000 queued=2666 running=10 succeeded=6463 failed=136 cancelled=725 kills=77 stops=0 workers_active=8
+t= 162.0s submitted=10000 queued=2432 running=11 succeeded=6692 failed=140 cancelled=725 kills=80 stops=0 workers_active=8
+t= 167.1s submitted=10000 queued=2220 running=10 succeeded=6900 failed=145 cancelled=725 kills=82 stops=0 workers_active=8
+t= 172.2s submitted=10000 queued=1999 running=10 succeeded=7116 failed=150 cancelled=725 kills=84 stops=0 workers_active=8
+t= 177.2s submitted=10000 queued=1778 running=11 succeeded=7330 failed=156 cancelled=725 kills=88 stops=0 workers_active=8
+t= 182.3s submitted=10000 queued=1565 running=9 succeeded=7542 failed=159 cancelled=725 kills=90 stops=0 workers_active=8
+t= 187.3s submitted=10000 queued=1350 running=11 succeeded=7754 failed=160 cancelled=725 kills=93 stops=0 workers_active=8
+t= 192.4s submitted=10000 queued=1125 running=10 succeeded=7976 failed=164 cancelled=725 kills=95 stops=0 workers_active=8
+t= 197.4s submitted=10000 queued=908 running=11 succeeded=8186 failed=170 cancelled=725 kills=98 stops=0 workers_active=8
+t= 202.5s submitted=10000 queued=681 running=10 succeeded=8405 failed=179 cancelled=725 kills=100 stops=0 workers_active=8
+t= 207.6s submitted=10000 queued=462 running=11 succeeded=8620 failed=182 cancelled=725 kills=103 stops=0 workers_active=8
+t= 212.6s submitted=10000 queued=242 running=10 succeeded=8830 failed=193 cancelled=725 kills=105 stops=0 workers_active=8
+t= 217.7s submitted=10000 queued=24 running=10 succeeded=9042 failed=199 cancelled=725 kills=107 stops=0 workers_active=8
+t= 222.8s submitted=10000 queued=0 running=1 succeeded=9074 failed=200 cancelled=725 kills=110 stops=0 workers_active=8
+
+== summary
+wall=223.8s throughput=44.7 jobs/s
+final states: succeeded=9074 failed=201 cancelled=725 queued=0 running=0 total=10000
+chaos: kill -9=111 SIGSTOP=0 unexpected_worker_exits=0 []
+POST status={201: 9996, 200: 6268} client_errors(timeouts etc)=7 5xx=0 max_latency=1.26s
+POST kinds sent: {'orig': 10007, 'dup_later': 1464, 'dup_concurrent': 4800}
+cancel status={202: 359, 409: 144, 200: 463} errors=0 max_latency=0.96s kinds={'running': 400, 'late': 100, 'early': 466}
+events: {'cancel_requested': 359, 'cancelled': 248, 'cancelled_queued': 463, 'claim': 9631, 'created': 10000, 'failed': 201, 'reap_cancelled': 14, 'requeue': 94, 'succeeded': 9074}
+executions: claims=9631 jobs_claimed=9537 re-executions=94 (at-least-once) stale_writes_rejected=0
+attempts histogram: {0: 463, 1: 9443, 2: 94}
+side effects: total=9074 jobs_with_effect=9074 max_per_job=1
+
+== invariants
+[PASS] no job lost
+[PASS] no duplicate jobs / ids per idempotency key
+[PASS] at most one side effect per job
+[PASS] effects consistent with final state
+[PASS] none stuck in running/queued
+[PASS] cancel responses honoured
+[PASS] no double claim, epochs monotonic
+[PASS] only the lease holder transitions a running job
+[PASS] history consistent with final state
+[PASS] no lease reaped early (clock)
+worker/api log: /app/results/raw/chaos-004-clean.workers.log
+RESULT: PASS
